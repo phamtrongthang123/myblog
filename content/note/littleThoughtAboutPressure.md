@@ -6,6 +6,6 @@ categories:
     - Experiences
 ---
 
-Now I'm preparing for final exam. There are a lot of pressure because Grades are importance, people look at this and judge you. 
+Now I'm preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you. 
 
 I hate Grades, never love that. Never. nerver
