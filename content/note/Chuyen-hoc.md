@@ -5,6 +5,7 @@ date: 2018-03-18
 categories:
   - Experiences
 tags:
+  - VI
 ---
 Tôi vốn rất thích học, nhất là khi trong môi trường được kích thích.
 Hiện tại đã gần giữa học kì II rồi, nhìn lại tôi thấy mình tham quá.

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VI on Trong-Thang Pham&#39;s Blog</title>
+    <link>/tags/vi/</link>
+    <description>Recent content in VI on Trong-Thang Pham&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-VN</language>
+    <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vật vã thời gian đầu Đại Học</title>
+      <link>/note/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</guid>
+      <description>Tôi vốn rất thích học, nhất là khi trong môi trường được kích thích. Hiện tại đã gần giữa học kì II rồi, nhìn lại tôi thấy mình tham quá. Tôi đã học một lượng kiến thức mà tôi biết tôi có thể quên trong tương lai, và gần hết tất cả, đối với thời gian sau này, tôi cảm thấy không quan trọng. Học nhiều là tốt nhưng nếu học một cách lạc lối thì lãng phí thời gian.</description>
+    </item>
+    
+    <item>
+      <title>Note Week 1 Algs part 1 (Princeton)</title>
+      <link>/note/2018/02/09/note-week-1-algs-part-1-princeton/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2018/02/09/note-week-1-algs-part-1-princeton/</guid>
+      <description>Phải mất khá lâu mình mới bắt đầu làm assignment của tuần này, do khá tự ti về khả năng bản thân rằng sẽ không làm nổi vì hầu như ai cũng nói khó, lần mò thì có người bảo phải cần hiểu trước programming rồi OOP các thứ, làm mình chật vật vì không biết bắt đầu từ đâu. Đến 2 hôm trước sau khi nộp xong deadline về turning point thì mới phải tự vả một cái là hình như mình lại vô vòng an toàn.</description>
+    </item>
+    
+    <item>
+      <title>Cài Ubuntu lần đầu</title>
+      <link>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</guid>
+      <description>Cài Ubuntu lần đầu tiên Gian nan. Mà mọi lý do chủ yếu đến từ việc graphic card Nvidia :|
+Nếu có máy có card rời, nếu ở màn hình menu chọn Try Ubuntu&amp;hellip; Install Ubuntu &amp;hellip; mà không chỉnh nomodeset thì sẽ bị kẹt ở logo screen có mấy cái chấm chấm phía dưới. Mình tốn mấy ngày để mò vì tưởng phải chỉnh trong BIOS, chỉnh sau khi có màn hình menu, &amp;hellip; Cuối cùng phát hiện, là tới menu bấm f6 và chọn nomodeset là xong &amp;lt;(&amp;ldquo;).</description>
+    </item>
+    
+  </channel>
+</rss>

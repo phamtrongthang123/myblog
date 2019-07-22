@@ -10,6 +10,7 @@ tags:
 - Princeton
 - Coursera
 - Note 
+- VI
 ---
 
 Phải mất khá lâu mình mới bắt đầu làm assignment của tuần này, do khá tự ti về khả năng bản thân rằng sẽ không làm nổi vì hầu như ai cũng nói khó, lần mò thì có người bảo phải cần hiểu trước programming rồi OOP các thứ, làm mình chật vật vì không biết bắt đầu từ đâu. Đến 2 hôm trước sau khi nộp xong deadline về turning point thì mới phải tự vả một cái là hình như mình lại vô vòng an toàn. Có lẽ cũng do đây là Assignment đòi hỏi nhiều công việc đầu tiên mà mình làm nên mình mới như vậy.
@@ -108,22 +109,17 @@ Sau đó là các nội dung khá rõ ràng ở slide. Không đặc biệt, ngo
 # Các quote trong tuần này:
 > *"For me, great algorithms are the poetry of computation. Just like verse, they can be terse, allusive, dense, and even mysterious. But once unlocked, they cast a brilliant new light on some aspect of computing."* **- Francis Sullivan**
 
-&nbsp;
 
 > *"An algorithm must be seen to be believed."* **-Donald Knuth**
 
-&nbsp;
 
 > *"I will, in fact, claim that the difference between a bat programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structure and their relationships."* **-Linus Torvalds**
  
-&nbsp;
 
 > *"Algorithms + Data Structures = Programs."* **-Niklaus Wirth**
 
-&nbsp;
 
 > *"As soon as an Analytic Engine exist, it will necessarily guide the future course of the science. Whenever any result is sought by its aid, the question will arise - By what course of calculation can these results be arrived at by the machine in the shortest time?"* **-Charles Babbage (1864)**
 
-&nbsp;
 
 > *"It is convenient to have a measure of the amount of work involved in a computing process, even though it be a very crude one. We may count up the number of times that various elementary operations are applied in the whole process and then given them various weights. We might, for instance, count the number of additions, subtractions, multiplications, divisions, recording of numbers, and extractions of figures from tables. In the case of computing with matrices most of the work consists of multiplications and writing down numbers, and we shall therefore only attempt to count the number of multiplications and recordings.”* **- Alan Turing**

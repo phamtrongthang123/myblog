@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>University on Trong-Thang Pham&#39;s Blog</title>
+    <link>/tags/university/</link>
+    <description>Recent content in University on Trong-Thang Pham&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-VN</language>
+    <lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/university/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kết thúc năm hai</title>
+      <link>/2019/07/22/k-t-th%C3%BAc-n-m-hai/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/22/k-t-th%C3%BAc-n-m-hai/</guid>
+      <description>Cũng khá lâu rồi mới viết lại blog, hôm nay mình dành chút thời gian thư giãn để viết. Nhờ sử dụng blogdown với Rstudio làm mình có thể viết ở Windows nên sẽ có 2 kiểu bài tiếng việt + anh và thuần anh (sai chính tả nhiều, báo trước).</description>
+    </item>
+    
+  </channel>
+</rss>

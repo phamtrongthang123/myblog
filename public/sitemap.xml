@@ -14,6 +14,12 @@
   </url>
   
   <url>
+    <loc>/tags/en/</loc>
+    <lastmod>2019-07-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/experiences/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -44,7 +50,7 @@
   </url>
   
   <url>
-    <loc>/note/littlethoughtaboutpressure/</loc>
+    <loc>/note/2018/12/09/little-thought-about-pressure/</loc>
     <lastmod>2018-12-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -55,7 +61,13 @@
   </url>
   
   <url>
-    <loc>/note/chuyen-hoc/</loc>
+    <loc>/tags/vi/</loc>
+    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/note/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</loc>
     <lastmod>2018-03-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -84,7 +96,7 @@
   </url>
   
   <url>
-    <loc>/note/note-lai-a1-algs-p1/</loc>
+    <loc>/note/2018/02/09/note-week-1-algs-part-1-princeton/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url>
   

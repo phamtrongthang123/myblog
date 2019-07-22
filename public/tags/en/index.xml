@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EN on Trong-Thang Pham&#39;s Blog</title>
+    <link>/tags/en/</link>
+    <description>Recent content in EN on Trong-Thang Pham&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-VN</language>
+    <lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Come back and change the way writing blog!</title>
+      <link>/2019/07/22/come-back-and-change-the-way-writing-blog/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/22/come-back-and-change-the-way-writing-blog/</guid>
+      <description>Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com
+Well that&amp;rsquo;s all. The only reason I came back is working on my new series, called TIL. Hopefully it helps me &amp;lsquo;remember&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Little thought about pressure</title>
+      <link>/note/2018/12/09/little-thought-about-pressure/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2018/12/09/little-thought-about-pressure/</guid>
+      <description>Now I&amp;rsquo;m preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you.
+I hate Grades, never love that. Never. nerver</description>
+    </item>
+    
+  </channel>
+</rss>

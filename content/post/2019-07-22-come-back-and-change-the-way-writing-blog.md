@@ -7,6 +7,7 @@ categories:
   - Experiences
 tags:
   - R Markdown
+  - EN
 ---
 Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com 
 

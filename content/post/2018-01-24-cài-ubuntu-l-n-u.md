@@ -8,6 +8,7 @@ categories:
 tags:
   - Ubuntu
   - Fun stuff
+  - VI
 ---
 # Cài Ubuntu lần đầu tiên
 
