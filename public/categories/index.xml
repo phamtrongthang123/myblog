@@ -5,8 +5,8 @@
     <link>/categories/</link>
     <description>Recent content in Categories on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <language>vi-VN</language>
+    <lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Experiences</title>
       <link>/categories/experiences/</link>
-      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/experiences/</guid>
       <description></description>
@@ -26,15 +26,6 @@
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/algorithms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/categories/r/</guid>
       <description></description>
     </item>
     

@@ -1,14 +1,14 @@
 ---
-title: "Cài Ubuntu lần đầu"
-author: "Pham Trong Thang"
-date: 2018-01-24
+title: Cài Ubuntu lần đầu
+author: Trong-Thang Pham
+date: '2018-01-24'
+slug: cài-ubuntu-l-n-u
 categories:
   - Experiences
 tags:
   - Ubuntu
   - Fun stuff
 ---
-
 # Cài Ubuntu lần đầu tiên
 
 Gian nan. Mà mọi lý do chủ yếu đến từ việc graphic card Nvidia :|
@@ -22,4 +22,3 @@ Cài xong, vui thiệt vui vì mấy hôm trời rồi chả mần được gì.
 Sau mấy tiếng bạn Lâm ngồi search google để giúp mình và làm đủ thứ, mất thời gian quá nên thôi tạm ngưng :(. (mình lúc này vô dụng rồi vì không hiểu gì đang xảy ra )
 
 Lên phòng mình tìm kiếm tiếp, chợt thấy có bài nói là "Because of NOMODESET" , ok :)))) , theo bài hướng dẫn vô chỉnh lại nouveau.modeset=0 thì chạy ok, lưu vào grub để nó tự chạy luôn. => ổn thỏa.
-

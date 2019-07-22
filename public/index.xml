@@ -5,11 +5,21 @@
     <link>/</link>
     <description>Recent content on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <language>vi-VN</language>
+    <lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Come back and change the way writing blog!</title>
+      <link>/2019/07/22/come-back-and-change-the-way-writing-blog/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/22/come-back-and-change-the-way-writing-blog/</guid>
+      <description>Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com
+Well that&amp;rsquo;s all. The only reason I came back is working on my new series, called TIL. Hopefully it helps me &amp;lsquo;remember&amp;rsquo;.</description>
+    </item>
     
     <item>
       <title>Little thought about pressure</title>
@@ -17,16 +27,16 @@
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/note/littlethoughtaboutpressure/</guid>
-      <description>Now I&amp;rsquo;m preparing for final exam. There are a lot of pressure because Grades are importance, people look at this and judge you.
+      <description>Now I&amp;rsquo;m preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you.
 I hate Grades, never love that. Never. nerver</description>
     </item>
     
     <item>
       <title>Vật vã thời gian đầu Đại Học</title>
-      <link>/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</link>
+      <link>/note/chuyen-hoc/</link>
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</guid>
+      <guid>/note/chuyen-hoc/</guid>
       <description>Tôi vốn rất thích học, nhất là khi trong môi trường được kích thích. Hiện tại đã gần giữa học kì II rồi, nhìn lại tôi thấy mình tham quá. Tôi đã học một lượng kiến thức mà tôi biết tôi có thể quên trong tương lai, và gần hết tất cả, đối với thời gian sau này, tôi cảm thấy không quan trọng. Học nhiều là tốt nhưng nếu học một cách lạc lối thì lãng phí thời gian.</description>
     </item>
     
@@ -46,47 +56,17 @@ I hate Grades, never love that. Never. nerver</description>
       
       <guid>/about/</guid>
       <description>Author I&amp;rsquo;m Trong-Thang Pham, a student of University of Science, Ho Chi Minh City, Vietnam.
-About this blog Having struggled about my forgetting knowledges easily. I don&amp;rsquo;t know why but a lot of times I forget what I have learnt even it was like a weak before. Currently I&amp;rsquo;m using paper to note. It&amp;rsquo;s good enough for a short term but I lose my notes all the time. Therefore I need more persistent method like writing blog.</description>
+About this blog I am having struggled with my forgetting knowledge easily. I don’t know why but a lot of times I forget what I have learned even it was a weak before. Currently, I’m using paper and pen for noting stuff. It’s good enough for the short term, but I lose my notes all the time.</description>
     </item>
     
     <item>
       <title>Cài Ubuntu lần đầu</title>
-      <link>/2018/01/24/c%C3%A0i-ubuntu-l%E1%BA%A7n-%C4%91%E1%BA%A7u/</link>
+      <link>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</link>
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/01/24/c%C3%A0i-ubuntu-l%E1%BA%A7n-%C4%91%E1%BA%A7u/</guid>
+      <guid>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</guid>
       <description>Cài Ubuntu lần đầu tiên Gian nan. Mà mọi lý do chủ yếu đến từ việc graphic card Nvidia :|
 Nếu có máy có card rời, nếu ở màn hình menu chọn Try Ubuntu&amp;hellip; Install Ubuntu &amp;hellip; mà không chỉnh nomodeset thì sẽ bị kẹt ở logo screen có mấy cái chấm chấm phía dưới. Mình tốn mấy ngày để mò vì tưởng phải chỉnh trong BIOS, chỉnh sau khi có màn hình menu, &amp;hellip; Cuối cùng phát hiện, là tới menu bấm f6 và chọn nomodeset là xong &amp;lt;(&amp;ldquo;).</description>
-    </item>
-    
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
   </channel>

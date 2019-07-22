@@ -5,7 +5,7 @@
     <link>/tags/fun-stuff/</link>
     <description>Recent content in Fun stuff on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>vi-VN</language>
     <lastBuildDate>Wed, 24 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/fun-stuff/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>Cài Ubuntu lần đầu</title>
-      <link>/2018/01/24/c%C3%A0i-ubuntu-l%E1%BA%A7n-%C4%91%E1%BA%A7u/</link>
+      <link>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</link>
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/01/24/c%C3%A0i-ubuntu-l%E1%BA%A7n-%C4%91%E1%BA%A7u/</guid>
+      <guid>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</guid>
       <description>Cài Ubuntu lần đầu tiên Gian nan. Mà mọi lý do chủ yếu đến từ việc graphic card Nvidia :|
 Nếu có máy có card rời, nếu ở màn hình menu chọn Try Ubuntu&amp;hellip; Install Ubuntu &amp;hellip; mà không chỉnh nomodeset thì sẽ bị kẹt ở logo screen có mấy cái chấm chấm phía dưới. Mình tốn mấy ngày để mò vì tưởng phải chỉnh trong BIOS, chỉnh sau khi có màn hình menu, &amp;hellip; Cuối cùng phát hiện, là tới menu bấm f6 và chọn nomodeset là xong &amp;lt;(&amp;ldquo;).</description>
     </item>
