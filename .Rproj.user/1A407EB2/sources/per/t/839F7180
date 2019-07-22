@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551352203506.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "211475621",
+    "id" : "839F7180",
+    "lastKnownWriteTime" : 1551196265,
+    "last_content_update" : 1551352388823,
+    "path" : "/media/trongthang/Important/BLOG/myblog/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "36,17",
+        "scrollLine" : "20"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

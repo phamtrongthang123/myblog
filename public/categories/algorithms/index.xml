@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on Trong-Thang Pham&#39;s Blog</title>
+    <link>/categories/algorithms/</link>
+    <description>Recent content in Algorithms on Trong-Thang Pham&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Note Week 1 Algs part 1 (Princeton)</title>
+      <link>/note/note-lai-a1-algs-p1/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/note/note-lai-a1-algs-p1/</guid>
+      <description>Phải mất khá lâu mình mới bắt đầu làm assignment của tuần này, do khá tự ti về khả năng bản thân rằng sẽ không làm nổi vì hầu như ai cũng nói khó, lần mò thì có người bảo phải cần hiểu trước programming rồi OOP các thứ, làm mình chật vật vì không biết bắt đầu từ đâu. Đến 2 hôm trước sau khi nộp xong deadline về turning point thì mới phải tự vả một cái là hình như mình lại vô vòng an toàn.</description>
+    </item>
+    
+  </channel>
+</rss>
