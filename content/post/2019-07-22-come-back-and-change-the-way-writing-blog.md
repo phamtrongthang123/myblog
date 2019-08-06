@@ -12,4 +12,4 @@ tags:
 Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com 
 
 Well that's all. 
-The only reason I came back is working on my new series, called TIL. Hopefully it helps me 'remember'.
+The only reason I came back is my condition got worse. Hopefully it helps me 'remember' like I thought.
