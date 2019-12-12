@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fun stuff on Trong-Thang Pham&#39;s Blog</title>
@@ -18,7 +18,7 @@
       
       <guid>/2018/01/24/c%C3%A0i-ubuntu-l-n-u/</guid>
       <description>Cài Ubuntu lần đầu tiên Gian nan. Mà mọi lý do chủ yếu đến từ việc graphic card Nvidia :|
-Nếu có máy có card rời, nếu ở màn hình menu chọn Try Ubuntu&amp;hellip; Install Ubuntu &amp;hellip; mà không chỉnh nomodeset thì sẽ bị kẹt ở logo screen có mấy cái chấm chấm phía dưới. Mình tốn mấy ngày để mò vì tưởng phải chỉnh trong BIOS, chỉnh sau khi có màn hình menu, &amp;hellip; Cuối cùng phát hiện, là tới menu bấm f6 và chọn nomodeset là xong &amp;lt;(&amp;ldquo;).</description>
+Nếu có máy có card rời, nếu ở màn hình menu chọn Try Ubuntu&amp;hellip; Install Ubuntu &amp;hellip; mà không chỉnh nomodeset thì sẽ bị kẹt ở logo screen có mấy cái chấm chấm phía dưới. Mình tốn mấy ngày để mò vì tưởng phải chỉnh trong BIOS, chỉnh sau khi có màn hình menu, &amp;hellip; Cuối cùng phát hiện, là tới menu bấm f6 và chọn nomodeset là xong &amp;lt;(&amp;quot;).</description>
     </item>
     
   </channel>

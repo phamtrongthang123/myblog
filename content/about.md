@@ -7,7 +7,7 @@ date: '2018-02-08'
 # Author
 ![](/post/about_files/profile_img.png)
 
-I'm Trong-Thang Pham, a student of University of Science, Ho Chi Minh City, Vietnam. 
+My name is Trong-Thang Pham. I'm a student of University of Science, Ho Chi Minh City, Vietnam. 
 
 # About this blog
 

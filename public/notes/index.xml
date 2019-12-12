@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Trong-Thang Pham&#39;s Blog</title>
+    <link>/notes/</link>
+    <description>Recent content in Notes on Trong-Thang Pham&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi-VN</language>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Little thought about pressure</title>
+      <link>/notes/littlethoughtaboutpressure/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/littlethoughtaboutpressure/</guid>
+      <description>Now I&#39;m preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you.
+I hate Grades, never love that. Never. nerver</description>
+    </item>
+    
+    <item>
+      <title>Vật vã thời gian đầu Đại Học</title>
+      <link>/notes/chuyen-hoc/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/chuyen-hoc/</guid>
+      <description>Tôi vốn rất thích học, nhất là khi trong môi trường được kích thích. Hiện tại đã gần giữa học kì II rồi, nhìn lại tôi thấy mình tham quá. Tôi đã học một lượng kiến thức mà tôi biết tôi có thể quên trong tương lai, và gần hết tất cả, đối với thời gian sau này, tôi cảm thấy không quan trọng. Học nhiều là tốt nhưng nếu học một cách lạc lối thì lãng phí thời gian.</description>
+    </item>
+    
+    <item>
+      <title>Note Week 1 Algs part 1 (Princeton)</title>
+      <link>/notes/note-lai-a1-algs-p1/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/note-lai-a1-algs-p1/</guid>
+      <description>Phải mất khá lâu mình mới bắt đầu làm assignment của tuần này, do khá tự ti về khả năng bản thân rằng sẽ không làm nổi vì hầu như ai cũng nói khó, lần mò thì có người bảo phải cần hiểu trước programming rồi OOP các thứ, làm mình chật vật vì không biết bắt đầu từ đâu. Đến 2 hôm trước sau khi nộp xong deadline về turning point thì mới phải tự vả một cái là hình như mình lại vô vòng an toàn.</description>
+    </item>
+    
+  </channel>
+</rss>

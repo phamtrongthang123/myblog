@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Note on Trong-Thang Pham&#39;s Blog</title>
@@ -6,10 +6,19 @@
     <description>Recent content in Note on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hệ điều hành: Bài toán xếp lịch </title>
+      <link>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%C3%A0i-to%C3%A1n-x%E1%BA%BFp-l%E1%BB%8Bch/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%C3%A0i-to%C3%A1n-x%E1%BA%BFp-l%E1%BB%8Bch/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Note Week 1 Algs part 1 (Princeton)</title>
