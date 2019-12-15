@@ -9,6 +9,7 @@ tags:
   - Ubuntu
 ---
 Bên trong máy:
+
 - Cài synaptic 
 - Cài chrome 
 - Cài gnome tweak
