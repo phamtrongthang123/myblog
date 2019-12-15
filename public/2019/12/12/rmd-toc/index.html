@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hệ điều hành: bộ nhớ | Trong-Thang Pham&#39;s Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="https://github.com/phamtrongthang123">GitHub</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Hệ điều hành: bộ nhớ</span></h1>
+<h2 class="author">Trong-Thang Pham</h2>
+<h2 class="date">2019/12/12</h2>
+</div>
+
+<main>
+<p>Bắt đầu ôn bài thôi nhỉ. Từ đây sẽ là chuỗi bài ôn bài HDH cuối kì cho mình.
+Mình sẽ đi theo hướng giải bt vì nếu tóm tắt sẽ không đủ thời gian để hoàn thành. :(</p>
+<h3 id="81-name-two-differences-between-logical-and-physical-addresses">8.1 Name two differences between logical and physical addresses</h3>
+<ul>
+<li>user sẽ thấy theo logical  - còn thực tế sử dụng physical</li>
+<li>logial từ 0 -&gt; max - physical được map qua R+0 -&gt; R+max</li>
+<li>logical được CPU sinh ra - physical thì memory unit đọc được</li>
+</ul>
+<h3 id="82-consider-a-system-in-which-a-program-can-be-separated-into-two-parts-code-and-data-the-cpu-knows-whether-it-wants-an-instruction-instruction-fetch-or-data-data-fetch-or-store-therefore-two-base-limit-register-pairs-are-provided-one-for-instructions-and-one-for-data-the-instruction-baselimit-register-pair-is-automatically-read-only-so-programs-can-be-shared-among-different-users-discuss-the-advantages-and-disadvantages-of-this-scheme">8.2 Consider a system in which a program can be separated into two parts: code and data. The CPU knows whether it wants an instruction (instruction fetch) or data (data fetch or store). Therefore, two base-limit register pairs are provided: one for instructions and one for data. The instruction base–limit register pair is automatically read-only, so programs can be shared among different users. Discuss the advantages and disadvantages of this scheme.</h3>
+<h3 id="83-why-are-page-sizes-always-powers-of-2">8.3 Why are page sizes always powers of 2?</h3>
+<p>t chỉ tìm ra lý do nằm ở việc tính dễ hơn thôi, không biết sách có đề cập gì thêm không.</p>
+<h3 id="84-consider-a-logical-address-space-of-64-pages-of-1024-words-each-mapped-onto-a-physical-memory-of-32-frames">8.4 Consider a logical address space of 64 pages of 1,024 words each, mapped onto a physical memory of 32 frames.</h3>
+<h4 id="a-how-many-bits-are-there-in-the-logical-address">a. How many bits are there in the logical address?</h4>
+<p>ủa word là ít nhất 1 byte, còn này không nói rõ gì cả :'( Vậy xem word là 1 byte nhé</p>
+<p>2^10 * 2^3 * 2^6</p>
+<h4 id="b-how-many-bits-are-there-in-the-physical-address">b. How many bits are there in the physical address?</h4>
+<p>2^32</p>
+<h3 id="85-what-is-the-effect-of-allowing-two-entries-in-a-page-table-to-point-to-the-same-page-frame-in-memory-explain-how-this-effect-could-be-used-to-decrease-the-amount-of-time-needed-to-copy-a-large-amount-of-memory-from-one-place-to-another-what-effect-would-updating-some-byte-on-the-one-page-have-on-the-other-page">8.5 What is the effect of allowing two entries in a page table to point to the same page frame in memory? Explain how this effect could be used to decrease the amount of time needed to copy a large amount of memory from one place to another. What effect would updating some byte on the one page have on the other page?</h3>
+<p>Nghe như là kiểu map vào 1 chỗ, nếu thế thì khi copy sẽ chỉ copy 1 lần, thay vì copy 2 lần.
+Còn nếu update thì sẽ xảy ra vụ thay đổi. Ê nghe giống con trỏ hay reference ở cpp nhỉ.</p>
+<h3 id="86-describe-a-mechanism-by-which-one-segment-could-belong-to-the-address-space-of-two-different-processes">8.6 Describe a mechanism by which one segment could belong to the address space of two different processes.</h3>
+<h3 id="87-sharing-segments-among-processes-without-requiring-that-they-have-the-same-segment-number-is-possible-in-a-dynamically-linked-segmentation-system">8.7 Sharing segments among processes without requiring that they have the same segment number is possible in a dynamically linked segmentation system.</h3>
+<h4 id="a-define-a-system-that-allows-static-linking-and-sharing-of-segments-without-requiring-that-the-segment-numbers-be-the-same">a. Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same.</h4>
+<h4 id="b-describe-a-paging-scheme-that-allows-pages-to-be-shared-without-requiring-that-the-page-numbers-be-the-same">b. Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same.</h4>
+<h3 id="88-in-the-ibm370-memory-protection-is-provided-through-the-use-of-keys-a-key-is-a-4-bit-quantity-each-2-k-block-of-memory-has-a-key-the-storage-key-associated-with-it-the-cpu-also-has-a-key-the-protection-key-associated-with-it-a-store-operation-is-allowed-only-if-both-keys-are-equal-or-if-either-is-0-which-of-the-following-memory-management-schemes-could-be-used-successfully-with-this-hardware">8.8 In the IBM/370, memory protection is provided through the use of keys. A key is a 4-bit quantity. Each 2-K block of memory has a key (the storage key) associated with it. The CPU also has a key (the protection key) associated with it. A store operation is allowed only if both keys are equal or if either is 0. Which of the following memory-management schemes could be used successfully with this hardware?</h3>
+<h4 id="a-bare-machine">a. Bare machine</h4>
+<h4 id="b-single-user-system">b. Single-user system</h4>
+<h4 id="c-multiprogramming-with-a-fixed-number-of-processes">c. Multiprogramming with a fixed number of processes</h4>
+<h4 id="d-multiprogramming-with-a-variable-number-of-processes">d. Multiprogramming with a variable number of processes</h4>
+<h4 id="e-paging">e. Paging</h4>
+<h4 id="f-segmentation">f. Segmentation</h4>
+<h3 id="91-under-what-circumstances-do-page-faults-occur-describe-the-actions-taken-by-the-operating-system-when-a-page-fault-occurs">9.1 Under what circumstances do page faults occur? Describe the actions taken by the operating system when a page fault occurs.</h3>
+<h3 id="92-assume-that-you-have-a-page-reference-string-for-a-process-with-m-frames-initially-all-empty-the-page-reference-string-has-length-p-and-n-distinct-page-numbers-occur-in-it-answer-these-questions-for-any-page-replacement-algorithms">9.2 Assume that you have a page-reference string for a process with m frames (initially all empty). The page-reference string has length p, and n distinct page numbers occur in it. Answer these questions for any page-replacement algorithms:</h3>
+<h4 id="a-what-is-a-lower-bound-on-the-number-of-page-faults">a. What is a lower bound on the number of page faults?</h4>
+<h4 id="b-what-is-an-upper-bound-on-the-number-of-page-faults">b. What is an upper bound on the number of page faults?</h4>
+<h3 id="93-consider-the-page-table-shown-in-figure-930-for-a-system-with-12-bit-virtual-and-physical-addresses-and-with-256-byte-pages-the-list-of-free-page-frames-is-d-e-f-that-is-d-is-at-the-head-of-the-list-e-is-second-and-f-is-last">9.3 Consider the page table shown in Figure 9.30 for a system with 12-bit virtual and physical addresses and with 256-byte pages. The list of free page frames is D, E, F (that is, D is at the head of the list, E is second, and F is last).</h3>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Page Frame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>C</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A</td>
+</tr>
+<tr>
+<td>4</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>–</td>
+</tr>
+<tr>
+<td>8</td>
+<td>B</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-the-following-virtual-addresses-to-their-equivalent-physical-addresses-in-hexadecimal-all-numbers-are-given-in-hexadecimal-a-dash-for-a-page-frame-indicates-that-the-page-is-not-in-memory">Convert the following virtual addresses to their equivalent physical addresses in hexadecimal. All numbers are given in hexadecimal. (A dash for a page frame indicates that the page is not in memory.)</h3>
+<ul>
+<li>9EF</li>
+<li>111</li>
+<li>700</li>
+<li>0FF</li>
+</ul>
+<h3 id="94-consider-the-following-page-replacement-algorithms-rank-these-algorithms-on-a-five-point-scale-from-bad-to-perfect-according-to-their-page-fault-rate-separate-those-algorithms-that-suffer-from-beladys-anomaly-from-those-that-do-not">9.4 Consider the following page-replacement algorithms. Rank these algorithms on a five-point scale from “bad” to “perfect” according to their page-fault rate. Separate those algorithms that suffer from Belady’s anomaly from those that do not.</h3>
+<h4 id="a-lru-replacement">a. LRU replacement</h4>
+<h4 id="b-fifo-replacement">b. FIFO replacement</h4>
+<h4 id="c-optimal-replacement">c. Optimal replacement</h4>
+<h4 id="d-second-chance-replacement">d. Second-chance replacement</h4>
+<h3 id="95-discuss-the-hardware-support-required-to-support-demand-paging">9.5 Discuss the hardware support required to support demand paging.</h3>
+<h3 id="96-an-operating-system-supports-a-paged-virtual-memory-the-central-processor-has-a-cycle-time-of-1-microsecond-it-costs-an-additional-1-microsecond-to-access-a-page-other-than-the-current-one-pages-have-1000-words-and-the-paging-device-is-a-drum-that-rotates-at-3000-revolutions-per-minute-and-transfers-1-million-words-per-second-the-following-statistical-measurements-were-obtained-from-the-system">9.6 An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:</h3>
+<ul>
+<li>One percent of all instructions executed accessed a page other than
+the current page.</li>
+<li>Of the instructions that accessed another page, 80 percent accessed
+a page already in memory.</li>
+<li>When a new page was required, the replaced page was modified 50
+percent of the time.</li>
+</ul>
+<h3 id="calculate-the-effective-instruction-time-on-this-system-assuming-that-the-system-is-running-one-process-only-and-that-the-processor-is-idle-during-drum-transfers">Calculate the effective instruction time on this system, assuming that the system is running one process only and that the processor is idle during drum transfers.</h3>
+<h3 id="97-consider-the-two-dimensional-array-a">9.7 Consider the two-dimensional array A:</h3>
+<p><code>int A[][] = new int[100][100];</code></p>
+<h3 id="where-a00-is-at-location-200-in-a-paged-memory-system-with-pages-of-size-200-a-small-process-that-manipulates-the-matrix-resides-in-page-0-locations-0-to-199-thus-every-instruction-fetch-will-be-from-page-0-for-three-page-frames-how-many-page-faults-are-generated-by-the-following-array-initialization-loops-use-lru-replacement-and-assume-that-page-frame-1-contains-the-process-and-the-other-two-are-initially-empty">where <code>A[0][0]</code> is at location 200 in a paged memory system with pages of size 200. A small process that manipulates the matrix resides in page 0 (locations 0 to 199). Thus, every instruction fetch will be from page 0. For three page frames, how many page faults are generated by the following array-initialization loops? Use LRU replacement, and assume that page frame 1 contains the process and the other two are initially empty.</h3>
+<h4 id="a">a.</h4>
+<pre><code>for (int j = 0; j &lt; 100; j++)
+for (int i = 0; i &lt; 100; i++)
+A[i][j] = 0;
+</code></pre><h4 id="b">b.</h4>
+<pre><code>for (int i = 0; i &lt; 100; i++)
+for (int j = 0; j &lt; 100; j++)
+A[i][j] = 0;
+</code></pre><h3 id="98-consider-the-following-page-reference-string-1-2-3-4-2-1-5-6-2-1-2-3-7-6-3-2-1-2-3-6-how-many-page-faults-would-occur-for-the-following-replacement-algorithms-assuming-one-two-three-four-five-six-and-seven-frames-remember-that-all-frames-are-initially-empty-so-your-first-unique-pages-will-cost-one-fault-each">9.8 Consider the following page reference string: 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6. How many page faults would occur for the following replacement algorithms, assuming one, two, three, four, five, six, and seven frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.</h3>
+<ul>
+<li>LRU replacement</li>
+<li>FIFO replacement</li>
+<li>Optimal replacement</li>
+</ul>
+<h3 id="99-suppose-that-you-want-to-use-a-paging-algorithm-that-requires-a-reference-bit-such-as-second-chance-replacement-or-working-set-model-but-the-hardware-does-not-provide-one-sketch-how-you-could-simulate-a-reference-bit-even-if-one-were-not-provided-by-the-hardware-or-explain-why-it-is-not-possible-to-do-so-if-it-is-possible-calculate-what-the-cost-would-be">9.9 Suppose that you want to use a paging algorithm that requires a reference bit (such as second-chance replacement or working-set model), but the hardware does not provide one. Sketch how you could simulate a reference bit even if one were not provided by the hardware, or explain why it is not possible to do so. If it is possible, calculate what the cost would be.</h3>
+<h3 id="910-you-have-devised-a-new-page-replacement-algorithm-that-you-think-may-be-optimal-in-some-contorted-test-cases-beladys-anomaly-occurs-is-the-new-algorithm-optimal-explain-your-answer">9.10 You have devised a new page-replacement algorithm that you think may be optimal. In some contorted test cases, Belady’s anomaly occurs. Is the new algorithm optimal? Explain your answer.</h3>
+<h3 id="911-segmentation-is-similar-to-paging-but-uses-variable-sized-pages-define-two-segment-replacement-algorithms-one-based-on-the-fifo-pagereplacement-scheme-and-the-other-on-the-lru-page-replacement-scheme-remember-that-since-segments-are-not-the-same-size-the-segment-that-is-chosen-for-replacement-may-be-too-small-to-leave-enough-consecutive-locations-for-the-needed-segment-consider-strategies-for-systems-where-segments-cannot-be-relocated-and-strategies-for-systems-where-they-can">9.11 Segmentation is similar to paging but uses variable-sized “pages.” Define two segment-replacement algorithms, one based on the FIFO pagereplacement scheme and the other on the LRU page-replacement scheme. Remember that since segments are not the same size, the segment that is chosen for replacement may be too small to leave enough consecutive locations for the needed segment. Consider strategies for systems where segments cannot be relocated and strategies for systems where they can.</h3>
+<h3 id="912-consider-a-demand-paged-computer-system-where-the-degree-of-multiprogramming-is-currently-fixed-at-four-the-system-was-recently-measured-to-determine-utilization-of-the-cpu-and-the-paging-disk-three-alternative-results-are-shown-below-for-each-case-what-is-happening-can-the-degree-of-multiprogramming-be-increased-to-increase-the-cpu-utilization-is-the-paging-helping">9.12 Consider a demand-paged computer system where the degree of multiprogramming is currently fixed at four. The system was recently measured to determine utilization of the CPU and the paging disk. Three alternative results are shown below. For each case, what is happening? Can the degree of multiprogramming be increased to increase the CPU utilization? Is the paging helping?</h3>
+<h4 id="a-cpu-utilization-13-percent-disk-utilization-97-percent">a. CPU utilization 13 percent; disk utilization 97 percent</h4>
+<h4 id="b-cpu-utilization-87-percent-disk-utilization-3-percent">b. CPU utilization 87 percent; disk utilization 3 percent</h4>
+<h4 id="c-cpu-utilization-13-percent-disk-utilization-3-percent">c. CPU utilization 13 percent; disk utilization 3 percent</h4>
+<h3 id="913-we-have-an-operating-system-for-a-machine-that-uses-base-and-limit-registers-but-we-have-modified-the-machine-to-provide-a-page-table-can-the-page-tables-be-set-up-to-simulate-base-and-limit-registers-how-can-they-be-or-why-can-they-not-be">9.13 We have an operating system for a machine that uses base and limit registers, but we have modified the machine to provide a page table. Can the page tables be set up to simulate base and limit registers? How can they be, or why can they not be?</h3>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

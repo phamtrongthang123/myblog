@@ -37,7 +37,7 @@ unset __conda_setup
 ```
 - nodejs: phải có mớ này: `export PATH="/media/trongthang/Important/HOC_DAI_HOC/nodejs/node-v12.13.0-linux-x64/bin:$PATH"`
 - Cài rofi,keybinding cho nó, nhớ có enable fuzzy search nha 
-
+- Cho git thì tạo ssh theo hướng dẫn, thêm vào agent rồi vào git tạo 1 ssh key mới. vậy đủ rồi, ssh chẳng qua là để nó nhớ máy mình thôi ._. 
 
 Setup Blog:
 - Cài Rstudio (không cần cài R)
