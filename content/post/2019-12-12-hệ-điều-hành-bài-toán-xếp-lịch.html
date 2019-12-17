@@ -9,8 +9,168 @@ tags:
   - Note
   - Operating System
   - Hệ điều hành 
+  
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 
+<div id="TOC">
+<ul>
+<li><a href="#section">6.1</a></li>
+<li><a href="#section-1">6.2</a></li>
+<li><a href="#section-2">6.3</a></li>
+<li><a href="#section-3">6.4</a></li>
+<li><a href="#section-4">6.5</a></li>
+<li><a href="#section-5">6.6</a></li>
+<li><a href="#section-6">6.7</a></li>
+<li><a href="#section-7">6.8</a></li>
+<li><a href="#section-8">6.9</a></li>
+</ul>
+</div>
 
-
+<div id="section" class="section level3">
+<h3>6.1</h3>
+<p>A CPU-scheduling algorithm determines an order for the execution
+of its scheduled processes. Given n processes to be scheduled on one
+processor, how many different schedules are possible? Give a formula
+in terms of n.</p>
+<div id="answer" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-1" class="section level3">
+<h3>6.2</h3>
+<p>Explain the difference between preemptive and nonpreemptive scheduling.</p>
+<div id="answer-1" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-2" class="section level3">
+<h3>6.3</h3>
+<p>Suppose that the following processes arrive for execution at the times
+indicated. Each process will run for the amount of time listed. In
+answering the questions, use nonpreemptive scheduling, and base all
+decisions on the information you have at the time the decision must be
+made.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Process</th>
+<th>Arrival Time</th>
+<th>Burst Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1</td>
+<td>0.0</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>P2</td>
+<td>0.4</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>P3</td>
+<td>1.0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li><p>What is the average turnaround time for these processes with the
+FCFS scheduling algorithm?</p></li>
+<li><p>What is the average turnaround time for these processes with the
+SJF scheduling algorithm?</p></li>
+<li><p>The SJF algorithm is supposed to improve performance, but notice
+that we chose to run process P1 at time 0 because we did not know
+that two shorter processes would arrive soon. Compute what the
+average turnaround time will be if the CPU is left idle for the first
+1 unit and then SJF scheduling is used. Remember that processes
+P1 and P2 are waiting during this idle time, so their waiting time
+may increase. This algorithm could be called future-knowledge
+scheduling.</p></li>
+</ol>
+<div id="answer-2" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-3" class="section level3">
+<h3>6.4</h3>
+<p>What advantage is there in having different time-quantum sizes at
+different levels of a multilevel queueing system?</p>
+<div id="answer-3" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-4" class="section level3">
+<h3>6.5</h3>
+<p>Many CPU-scheduling algorithms are parameterized. For example, the
+RR algorithm requires a parameter to indicate the time slice. Multilevel
+feedback queues require parameters to define the number of queues, the
+scheduling algorithm for each queue, the criteria used to move processes
+between queues, and so on.</p>
+<p>These algorithms are thus really sets of algorithms (for example, the
+set of RR algorithms for all time slices, and so on). One set of algorithms
+may include another (for example, the FCFS algorithm is the RR algorithm
+with an infinite time quantum). What (if any) relation holds between the
+following pairs of algorithm sets?</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Priority and SJF</p></li>
+<li><p>Multilevel feedback queues and FCFS</p></li>
+<li><p>Priority and FCFS</p></li>
+<li><p>RR and SJF</p></li>
+</ol>
+<div id="answer-4" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-5" class="section level3">
+<h3>6.6</h3>
+<p>Suppose that a scheduling algorithm (at the level of short-term CPU
+scheduling) favors those processes that have used the least processor
+time in the recent past. Why will this algorithm favor I/O-bound
+programs and yet not permanently starve CPU-bound programs?</p>
+<div id="answer-5" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-6" class="section level3">
+<h3>6.7</h3>
+<p>Distinguish between PCS and SCS scheduling.</p>
+<div id="answer-6" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-7" class="section level3">
+<h3>6.8</h3>
+<p>Assume that an operating system maps user-level threads to the kernel
+using the many-to-many model and that the mapping is done through
+the use of LWPs. Furthermore, the system allows program developers to
+create real-time threads. Is it necessary to bind a real-time thread to an
+LWP?</p>
+<div id="answer-7" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>
+<div id="section-8" class="section level3">
+<h3>6.9</h3>
+<p>The traditional UNIX scheduler enforces an inverse relationship between
+priority numbers and priorities: the higher the number, the lower the
+priority. The scheduler recalculates process priorities once per second
+using the following function:</p>
+<p><code>Priority = (recent CPU usage / 2) + base</code></p>
+<p>where <code>base = 60</code> and <code>recent CPU usage</code> refers to a value indicating how
+often a process has used the CPU since priorities were last recalculated.
+Assume that recent CPU usage is 40 for process P1, 18 for process P2,
+and 10 for process P3. What will be the new priorities for these three
+processes when priorities are recalculated? Based on this information,
+does the traditional UNIX scheduler raise or lower the relative priority
+of a CPU-bound process?</p>
+<div id="answer-8" class="section level4">
+<h4>Answer:</h4>
+</div>
+</div>

@@ -137,9 +137,11 @@ Còn nếu update thì sẽ xảy ra vụ thay đổi. Ê nghe giống con trỏ
 </div>
 <div id="section-6" class="section level3">
 <h3>8.7</h3>
-<p>Sharing segments among processes without requiring that they have the same segment number is possible in a dynamically linked segmentation system.
-a. Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same.
-b. Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same.</p>
+<p>Sharing segments among processes without requiring that they have the same segment number is possible in a dynamically linked segmentation system.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same.</p></li>
+<li><p>Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same.</p></li>
+</ol>
 <div id="answer-5" class="section level4">
 <h4>Answer:</h4>
 </div>
@@ -164,6 +166,19 @@ b. Describe a paging scheme that allows pages to be shared without requiring tha
 <p>Under what circumstances do page faults occur? Describe the actions taken by the operating system when a page fault occurs.</p>
 <div id="answer-7" class="section level4">
 <h4>Answer:</h4>
+<blockquote>
+<p>_ the process tries to access a page that was not brought into memory. Access to a page marked invalid causes a page fault_. Vậy là nếu hệ thống đi vô trúng page không có trong mem là dính.</p>
+<p>ờ liệt kê lại nhỉ:</p>
+<ul>
+<li>Khi xảy ra page faults thì sẽ có trap, OS sẽ biết được.</li>
+<li>Os biết xong sẽ kiểm tra coi cái liên kết muốn truy cập (reference) hợp lệ không, nếu không sẽ hủy process. Nếu ok mà chưa load lên trên page thì sẽ load lên</li>
+<li>Tìm free frame trên physical mem</li>
+<li>Lên lịch cho disk để đọc cái page đó vào frame</li>
+<li>Khi đọc xong thì chỉnh sửa table bên trong của process và page table để thể hiện rằng page đã nằm trong mem</li>
+<li>Restart instruction bị interrupt bởi trap lúc nãy. Lúc này thì có thể chạy bình thường rồi vì page có trong mem.
+<img src="/post/2019-12-12-hệ-điều-hành-bộ-nhớ_files/Screenshot%20from%202019-12-15%2019-57-55.png" /></li>
+</ul>
+</blockquote>
 </div>
 </div>
 <div id="section-9" class="section level3">
@@ -263,13 +278,15 @@ b. Describe a paging scheme that allows pages to be shared without requiring tha
 </div>
 <div id="section-13" class="section level3">
 <h3>9.6</h3>
-<p>An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:
-- One percent of all instructions executed accessed a page other than
-the current page.
-- Of the instructions that accessed another page, 80 percent accessed
-a page already in memory.
-- When a new page was required, the replaced page was modified 50
-percent of the time.</p>
+<p>An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:</p>
+<ul>
+<li>One percent of all instructions executed accessed a page other than
+the current page.</li>
+<li>Of the instructions that accessed another page, 80 percent accessed
+a page already in memory.</li>
+<li>When a new page was required, the replaced page was modified 50
+percent of the time.</li>
+</ul>
 <p>Calculate the effective instruction time on this system, assuming that the system is running one process only and that the processor is idle during drum transfers.</p>
 <div id="answer-12" class="section level4">
 <h4>Answer:</h4>

@@ -27,7 +27,9 @@
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%C3%A0i-to%C3%A1n-x%E1%BA%BFp-l%E1%BB%8Bch/</guid>
-      <description></description>
+      <description>6.1 6.2 6.3 6.4 6.5 6.6 6.7 6.8 6.9   6.1 A CPU-scheduling algorithm determines an order for the execution of its scheduled processes. Given n processes to be scheduled on one processor, how many different schedules are possible? Give a formula in terms of n.
+Answer:   6.2 Explain the difference between preemptive and nonpreemptive scheduling.
+Answer:   6.3 Suppose that the following processes arrive for execution at the times indicated.</description>
     </item>
     
     <item>

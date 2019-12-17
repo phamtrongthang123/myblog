@@ -54,6 +54,16 @@ Consider a logical address space of 64 pages of 1,024 words each, mapped onto a 
 
 > 2^32
 
+#### Sol: 
+> a. 2^10 * 2^6 => 16 bits 
+> 
+> b. 2^10 * 2^5 => 15 bits
+> Giải thích (Trong sách không giải thích nhưng đây là cách hiểu của mình): mỗi word là được 1 giá trị của dãy bit trỏ tới, nên để trỏ được 
+> 1024 words thì cần 2^10 giá trị từ bit (10 bits), nhưng logical có 64 pages nên tổng địa chỉ là 2^6 * 2^10, aka 16 bits
+> Tương tự cho physical, physical cũng cần trỏ tới được (ngầm hiểu) nên cũng có 2^10 mỗi frame, và 32 frame là 2^5, tổng cộng là 2^10*2^5 aka 15 bits.
+> 
+> Ở trên mình giải sai vì hiểu lộn bit để map bit ._. my bad. với câu b sai vì mình chưa hiểu rõ.
+
 ### 8.5 
 What is the effect of allowing two entries in a page table to point to the same page frame in memory? Explain how this effect could be used to decrease the amount of time needed to copy a large amount of memory from one place to another. What effect would updating some byte on the one page have on the other page?
 
@@ -71,8 +81,10 @@ Describe a mechanism by which one segment could belong to the address space of t
 
 ### 8.7 
 Sharing segments among processes without requiring that they have the same segment number is possible in a dynamically linked segmentation system. 
-    a. Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same. 
-    b. Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same. 
+
+a. Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same. 
+    
+b. Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same. 
 
 #### Answer:
 
@@ -100,6 +112,19 @@ In the IBM/370, memory protection is provided through the use of keys. A key is 
 Under what circumstances do page faults occur? Describe the actions taken by the operating system when a page fault occurs. 
 
 #### Answer:
+> _ the process tries to access a page that was not brought into memory. Access to a page marked invalid causes a page fault_. Vậy là nếu hệ thống đi vô trúng page không có trong mem là dính. 
+>
+> ờ liệt kê lại nhỉ: 
+>
+- Khi xảy ra page faults thì sẽ có trap, OS sẽ biết được.
+- Os biết xong sẽ kiểm tra coi cái liên kết muốn truy cập (reference) hợp lệ không, nếu không sẽ hủy process. Nếu ok mà chưa load lên trên page thì sẽ load lên
+- Tìm free frame trên physical mem
+- Lên lịch cho disk để đọc cái page đó vào frame
+- Khi đọc xong thì chỉnh sửa table bên trong của process và page table để thể hiện rằng page đã nằm trong mem
+- Restart instruction bị interrupt bởi trap lúc nãy. Lúc này thì có thể chạy bình thường rồi vì page có trong mem.
+![](/post/2019-12-12-hệ-điều-hành-bộ-nhớ_files/Screenshot from 2019-12-15 19-57-55.png)
+
+
 
 ### 9.2 
 Assume that you have a page-reference string for a process with m frames (initially all empty). The page-reference string has length p, and n distinct page numbers occur in it. Answer these questions for any page-replacement algorithms:
@@ -109,7 +134,11 @@ Assume that you have a page-reference string for a process with m frames (initia
   b. What is an upper bound on the number of page faults?
 
 #### Answer:
-
+> đọc lại phần cuối của 412, và đầu 413 để hiểu ý câu hỏi này
+>
+> a. lower thì ngon nhất khi m = p, lúc này chỉ có n page fault.
+> 
+> b. upper thì chắc là khi m bằng 1, lúc này thì luôn có page fault aka max = p
 
 ### 9.3 
 Consider the page table shown in Figure 9.30 for a system with 12-bit virtual and physical addresses and with 256-byte pages. The list of free page frames is D, E, F (that is, D is at the head of the list, E is second, and F is last).
@@ -135,7 +164,7 @@ Convert the following virtual addresses to their equivalent physical addresses i
 - 0FF
 
 #### Answer:
-
+> Đọc đề không hiểu ý ._. 
 
 ### 9.4 
 Consider the following page-replacement algorithms. Rank these algorithms on a five-point scale from “bad” to “perfect” according to their page-fault rate. Separate those algorithms that suffer from Belady’s anomaly from those that do not.
@@ -149,15 +178,31 @@ Consider the following page-replacement algorithms. Rank these algorithms on a f
   d. Second-chance replacement
 
 #### Answer:
+> LRU 4, không dính Belady 
+> FIFO 1, dính Belady 
+> OPT 5, không dính 
+> 2nd 3, trường hợp xấu nhất là giống FIFO nên chắc có dính 
 
 
 ### 9.5 
 Discuss the hardware support required to support demand paging.
 
 #### Answer:
+> Trích sách: 
+> 
+> The hardware to support demand paging is the same as the hardware for
+paging and swapping:
+>
+- Page table. This table has the ability to mark an entry invalid through a
+valid–invalid bit or a special value of protection bits.
+- Secondary memory. This memory holds those pages that are not present
+in main memory. The secondary memory is usually a high-speed disk. It is
+known as the swap device, and the section of disk used for this purpose is
+known as swap space
 
 ### 9.6 
 An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:
+
 - One percent of all instructions executed accessed a page other than
 the current page.
 - Of the instructions that accessed another page, 80 percent accessed
@@ -168,24 +213,28 @@ percent of the time.
 Calculate the effective instruction time on this system, assuming that the system is running one process only and that the processor is idle during drum transfers.
 
 #### Answer:
+> 
+
 
 ### 9.7 
-Consider the two-dimensional array A: 
+Consider the two-dimensional array A:
+
 `int A[][] = new int[100][100];` 
+
 where `A[0][0]` is at location 200 in a paged memory system with pages of size 200. A small process that manipulates the matrix resides in page 0 (locations 0 to 199). Thus, every instruction fetch will be from page 0. For three page frames, how many page faults are generated by the following array-initialization loops? Use LRU replacement, and assume that page frame 1 contains the process and the other two are initially empty.
 
   a. 
 ```
 for (int j = 0; j < 100; j++)
-for (int i = 0; i < 100; i++)
-A[i][j] = 0;
+  for (int i = 0; i < 100; i++)
+    A[i][j] = 0;
 ```
 
   b. 
 ```
 for (int i = 0; i < 100; i++)
-for (int j = 0; j < 100; j++)
-A[i][j] = 0;
+  for (int j = 0; j < 100; j++)
+    A[i][j] = 0;
 ```
 
 #### Answer:
@@ -197,23 +246,35 @@ Consider the following page reference string: 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3
 - Optimal replacement
 
 #### Answer:
+> Vẽ bảng nào, làm nháp ở ngoài rồi nhá 
+| #frame | LRU | FIFO | OPT |
+| :----- | :-- | :--- | :-- |
+| 1      | 20  | 20   | 20  |
+| 2      | 18  | 18   | 15  |
+| 3      | 15  | 16   | 11  |
+| 4      | 10  | 14   | 8   |
+| 5      | 9   | 10   | 7   |
+| 6      | 7   | 10   | 7   |
+| 7      | 7   | 7    | 7   |
 
 ### 9.9 
 Suppose that you want to use a paging algorithm that requires a reference bit (such as second-chance replacement or working-set model), but the hardware does not provide one. Sketch how you could simulate a reference bit even if one were not provided by the hardware, or explain why it is not possible to do so. If it is possible, calculate what the cost would be. 
 
 #### Answer:
+> Ờ ... gì chứ ._. 
+
 
 ### 9.10 
 You have devised a new page-replacement algorithm that you think may be optimal. In some contorted test cases, Belady’s anomaly occurs. Is the new algorithm optimal? Explain your answer.
 
 #### Answer:
-
+> Sao optimal được, OPT không bị Belady mà thằng này bị thì làm sao cái này optimal được ._. 
 
 ### 9.11 
 Segmentation is similar to paging but uses variable-sized “pages.” Define two segment-replacement algorithms, one based on the FIFO pagereplacement scheme and the other on the LRU page-replacement scheme. Remember that since segments are not the same size, the segment that is chosen for replacement may be too small to leave enough consecutive locations for the needed segment. Consider strategies for systems where segments cannot be relocated and strategies for systems where they can.
 
 #### Answer:
-
+> Trên lớp không học :'( 
 
 ### 9.12 
 Consider a demand-paged computer system where the degree of multiprogramming is currently fixed at four. The system was recently measured to determine utilization of the CPU and the paging disk. Three alternative results are shown below. For each case, what is happening? Can the degree of multiprogramming be increased to increase the CPU utilization? Is the paging helping?
