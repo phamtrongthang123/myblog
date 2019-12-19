@@ -21,11 +21,35 @@ processor, how many different schedules are possible? Give a formula
 in terms of n.
 
 #### Answer:
+> $n!$ ._. 
+
 
 ### 6.2 
 Explain the difference between preemptive and nonpreemptive scheduling.
 
 #### Answer:
+>  Under nonpreemptive scheduling, once the CPU has been
+allocated to a process, the process keeps the CPU until it releases the CPU either
+by terminating or by switching to the waiting state
+> 
+> Nhắc lại 4 trạng thái CPU scheduling nắm quyền được:
+>
+> - 1. When a process switches from the running state to the waiting state (for
+example, as the result of an I/O request or an invocation of wait() for
+the termination of a child process)
+> - 2. When a process switches from the running state to the ready state (for
+example, when an interrupt occurs)
+> - 3. When a process switches from the waiting state to the ready state (for
+example, at completion of I/O)
+> - 4. When a process terminates
+> 
+> Nonpreemtive là 1,4. 2,3 là preemptive.
+
+#### Từ sol: 
+> Preemptive scheduling allows a process to be interrupted in the midst of
+its execution, taking the CPU away and allocating it to another process.
+Nonpreemptive scheduling ensures that a process relinquishes control
+of the CPU only when it finishes with its current CPU burst.
 
 ### 6.3 
 Suppose that the following processes arrive for execution at the times
@@ -34,11 +58,11 @@ answering the questions, use nonpreemptive scheduling, and base all
 decisions on the information you have at the time the decision must be
 made.
 
-Process | Arrival Time | Burst Time
----|---|---
-P1 |0.0 | 8
-P2 | 0.4 | 4
-P3 | 1.0 | 1
+| Process | Arrival Time | Burst Time |
+| :------ | :----------- | :--------- |
+| P1      | 0.0          | 8          |
+| P2      | 0.4          | 4          |
+| P3      | 1.0          | 1          |
 
 a. What is the average turnaround time for these processes with the
 FCFS scheduling algorithm?
@@ -56,14 +80,35 @@ may increase. This algorithm could be called future-knowledge
 scheduling.
 
 #### Answer:
+>
+- a. theo thứ tự là 1,2,3 => (0+8+12) / 3 = 6.67
+- b. nonpreempt, nhưng theo thứ tự thì là 1 3 2 (có đảo vì nhảy theo 1 unit, nên nhảy xong thì 3 pri cao hơn 2) là 5.67
+- c. yeah, tại t=0 thì không biết. theo đề thì ý là chờ 1 unit, aka là Arrival time giờ mọi đứa đều ngang nhau. 
+Thứ tự mới sẽ là 3,2,1 với time chờ mới +1  => (1+2+6)/3=3 , có +1 vì thằng đầu cũng chờ 1s
 
+#### Theo sol:
+> 
+- a. 10.53
+- b. 9.53
+- c. 6.86
+>
+> Ơ thôi chết nhớ nhầm waiting time rồi, $$turnaround\ \ time = finish - arrival$$, vậy không bỏ cái cuối aka. 
+> vậy câu a là $$8-0 + 12 - 0.4 + 13-1)/3 = 10.53$$, đúng rồi :'(
+> b là $$(8+9-1+13-0.4)/3 = 9.53$$ và c là $$(2-1 + 6-0.4+14-0)/3 = 6.86$$
 
 ### 6.4 
 What advantage is there in having different time-quantum sizes at
 different levels of a multilevel queueing system?
 
 #### Answer:
+> Cái này đăng không nói tới feedback nên thật sự không hình dung nổi lợi ích chỗ nào .-. 
 
+#### Sol:
+>Processes that need more frequent servicing, for instance, interactive
+processes such as editors, can be in a queue with a small time quantum.
+Processes with no need for frequent servicing can be in a queue with
+a larger quantum, requiring fewer context switches to complete the
+processing, and thus making more efficient use of the computer.
 
 ### 6.5 
 Many CPU-scheduling algorithms are parameterized. For example, the
@@ -87,6 +132,19 @@ c. Priority and FCFS
 d. RR and SJF
 
 #### Answer:
+>
+- a. SJF là trường hợp prio inverse thời gian CPU burst của Pri
+- b. cho nó là 1 level chạy fcfs là giống nhỉ ._.
+- c. FCFS là trường hợp prio đều hết cho mọi proc của Pri 
+- d. Ủa có không nhỉ, SJF là FCFS khi SJF có arrival lần lượt, nên nếu lần lượt thì RR giống SJF với inf quantum time.
+
+#### Sol:
+> 
+- a. The shortest job has the highest priority. <= yeah 
+- b. The lowest level of MLFQ is FCFS. <= yeah 
+- c. FCFS gives the highest priority to the job having been in existence 
+the longest. <= nani. à do mình đọc lướt sách nên không để ý, sách ghi là nếu pri eual sẽ chạy như fcfs, nhưng mà ... mình cũng đâu sai nhỉ. nvm sol nghe dễ chấp nhận hơn. 
+- d. None. <= yeah, mình thì đem đi so sánh với trung gian là fcfs =]]]] mà mình cũng ghi bậy thêm arrival. nghĩ nhiều rồi. 
 
 ### 6.6 
 Suppose that a scheduling algorithm (at the level of short-term CPU
@@ -95,38 +153,39 @@ time in the recent past. Why will this algorithm favor I/O-bound
 programs and yet not permanently starve CPU-bound programs?
 
 #### Answer:
+> ._. không biết. Chắc là io bound thì dùng ít cpu nên được favor. còn vế sau thì không nghĩ ra.
 
+#### Sol (biết cũng tốt): 
+> It will favor the I/O-bound programs because of the relatively short CPU
+burst request by them; however, the CPU-bound programs will not starve
+because the I/O-bound programs will relinquish the CPU relatively often
+to do their I/O. 
 
-### 6.7 
-Distinguish between PCS and SCS scheduling.
-
-#### Answer:
-
-
-### 6.8 
-Assume that an operating system maps user-level threads to the kernel
-using the many-to-many model and that the mapping is done through
-the use of LWPs. Furthermore, the system allows program developers to
-create real-time threads. Is it necessary to bind a real-time thread to an
-LWP?
+### 6.30
+Under what circumstances is rate-monotonic scheduling inferior to
+earliest-deadline-first scheduling in meeting the deadlines associated
+with processes?
 
 #### Answer:
 
+> theo sách thì EDF optimal rồi. RMS thì max là n*(2^1/n - 1), còn EDF tới 100 được. 
+> Theo ví dụ trong sách ráng nhớ là p1 = 50, t1 = 25, p2 = 80, t2 = 35, 25/50 + 35/80 = 0.94, RMS failed chỗ này 
 
-### 6.9 
-The traditional UNIX scheduler enforces an inverse relationship between
-priority numbers and priorities: the higher the number, the lower the
-priority. The scheduler recalculates process priorities once per second
-using the following function:
 
-`Priority = (recent CPU usage / 2) + base`
+### 6.31 
+Consider two processes, P1 and P2, where p1 = 50, t1 = 25, p2 = 75, and
+t2 = 30.
 
-where `base = 60` and `recent CPU usage` refers to a value indicating how
-often a process has used the CPU since priorities were last recalculated.
-Assume that recent CPU usage is 40 for process P1, 18 for process P2,
-and 10 for process P3. What will be the new priorities for these three
-processes when priorities are recalculated? Based on this information,
-does the traditional UNIX scheduler raise or lower the relative priority
-of a CPU-bound process?
+a. Can these two processes be scheduled using rate-monotonic
+scheduling? Illustrate your answer using a Gantt chart such as
+the ones in Figure 6.16–Figure 6.19.
 
-#### Answer:
+b. Illustrate the scheduling of these two processes using earliestdeadline-first (EDF) scheduling
+
+> a. 0.9 cpu util, có thể failed. Để vẽ nháp thử 
+> ![](/post/2019-12-12-hệ-điều-hành-bài-toán-xếp-lịch_files/79529938_568829707285709_2836350377408856064_n.jpg)
+>
+> Failed thật 
+> 
+> b. 
+> ![](/post/2019-12-12-hệ-điều-hành-bài-toán-xếp-lịch_files/68697559_1272546706279638_2996055764193247232_n.jpg)
