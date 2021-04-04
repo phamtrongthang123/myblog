@@ -36,152 +36,80 @@
 </div>
 
 <main>
-
-
-<div id="TOC">
-<ul>
-<li><a href="#section">8.1</a></li>
-<li><a href="#section-1">8.2</a></li>
-<li><a href="#section-2">8.3</a></li>
-<li><a href="#section-3">8.4</a></li>
-<li><a href="#section-4">8.5</a></li>
-<li><a href="#section-5">8.6</a></li>
-<li><a href="#section-6">8.7</a></li>
-<li><a href="#section-7">8.8</a></li>
-<li><a href="#section-8">9.1</a></li>
-<li><a href="#section-9">9.2</a></li>
-<li><a href="#section-10">9.3</a></li>
-<li><a href="#section-11">9.4</a></li>
-<li><a href="#section-12">9.5</a></li>
-<li><a href="#section-13">9.6</a></li>
-<li><a href="#section-14">9.7</a></li>
-<li><a href="#section-15">9.8</a></li>
-<li><a href="#section-16">9.9</a></li>
-<li><a href="#section-17">9.10</a></li>
-<li><a href="#section-18">9.11</a></li>
-<li><a href="#section-19">9.12</a></li>
-<li><a href="#section-20">9.13</a></li>
-</ul>
-</div>
-
 <p>Bắt đầu ôn bài thôi nhỉ. Từ đây sẽ là chuỗi bài ôn bài HDH cuối kì cho mình.
 Mình sẽ đi theo hướng giải bt vì nếu tóm tắt sẽ không đủ thời gian để hoàn thành. :(</p>
-<div id="section" class="section level3">
-<h3>8.1</h3>
+<h3 id="81">8.1</h3>
 <p>Name two differences between logical and physical addresses</p>
-<div id="answer" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer">Answer:</h4>
 <blockquote>
+</blockquote>
 <ul>
-<li>user sẽ thấy theo logical - còn thực tế sử dụng physical</li>
+<li>user sẽ thấy theo logical  - còn thực tế sử dụng physical</li>
 <li>logial từ 0 -&gt; max - physical được map qua R+0 -&gt; R+max</li>
 <li>logical được CPU sinh ra - physical thì memory unit đọc được</li>
 </ul>
-</blockquote>
-</div>
-</div>
-<div id="section-1" class="section level3">
-<h3>8.2</h3>
+<h3 id="82">8.2</h3>
 <p>Consider a system in which a program can be separated into two parts: code and data. The CPU knows whether it wants an instruction (instruction fetch) or data (data fetch or store). Therefore, two base-limit register pairs are provided: one for instructions and one for data. The instruction base–limit register pair is automatically read-only, so programs can be shared among different users. Discuss the advantages and disadvantages of this scheme.</p>
-<div id="answer-1" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-1">Answer:</h4>
 <blockquote>
-
 </blockquote>
-</div>
-</div>
-<div id="section-2" class="section level3">
-<h3>8.3</h3>
+<h3 id="83">8.3</h3>
 <p>Why are page sizes always powers of 2?</p>
-<div id="answer-2" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-2">Answer:</h4>
 <blockquote>
 <p>t chỉ tìm ra lý do nằm ở việc tính dễ hơn thôi, không biết sách có đề cập gì thêm không.</p>
 </blockquote>
-</div>
-</div>
-<div id="section-3" class="section level3">
-<h3>8.4</h3>
+<h3 id="84">8.4</h3>
 <p>Consider a logical address space of 64 pages of 1,024 words each, mapped onto a physical memory of 32 frames.</p>
-<ol style="list-style-type: lower-alpha">
-<li>How many bits are there in the logical address?</li>
-</ol>
+<p>a. How many bits are there in the logical address?</p>
 <blockquote>
-<p>ủa word là ít nhất 1 byte, còn này không nói rõ gì cả :’( Vậy xem word là 1 byte nhé</p>
+<p>ủa word là ít nhất 1 byte, còn này không nói rõ gì cả :'( Vậy xem word là 1 byte nhé</p>
 <p>2^10 * 2^3 * 2^6</p>
 </blockquote>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>How many bits are there in the physical address?</li>
-</ol>
+<p>b. How many bits are there in the physical address?</p>
 <blockquote>
 <p>2^32</p>
 </blockquote>
-<div id="sol" class="section level4">
-<h4>Sol:</h4>
+<h4 id="sol">Sol:</h4>
 <blockquote>
-<ol style="list-style-type: lower-alpha">
-<li><p>2^10 * 2^6 =&gt; 16 bits</p></li>
-<li><p>2^10 * 2^5 =&gt; 15 bits
+<p>a. 2^10 * 2^6 =&gt; 16 bits</p>
+<p>b. 2^10 * 2^5 =&gt; 15 bits
 Giải thích (Trong sách không giải thích nhưng đây là cách hiểu của mình): mỗi word là được 1 giá trị của dãy bit trỏ tới, nên để trỏ được
 1024 words thì cần 2^10 giá trị từ bit (10 bits), nhưng logical có 64 pages nên tổng địa chỉ là 2^6 * 2^10, aka 16 bits
-Tương tự cho physical, physical cũng cần trỏ tới được (ngầm hiểu) nên cũng có 2^10 mỗi frame, và 32 frame là 2^5, tổng cộng là 2^10*2^5 aka 15 bits.</p></li>
-</ol>
+Tương tự cho physical, physical cũng cần trỏ tới được (ngầm hiểu) nên cũng có 2^10 mỗi frame, và 32 frame là 2^5, tổng cộng là 2^10*2^5 aka 15 bits.</p>
 <p>Ở trên mình giải sai vì hiểu lộn bit để map bit ._. my bad. với câu b sai vì mình chưa hiểu rõ.</p>
 </blockquote>
-</div>
-</div>
-<div id="section-4" class="section level3">
-<h3>8.5</h3>
+<h3 id="85">8.5</h3>
 <p>What is the effect of allowing two entries in a page table to point to the same page frame in memory? Explain how this effect could be used to decrease the amount of time needed to copy a large amount of memory from one place to another. What effect would updating some byte on the one page have on the other page?</p>
-<div id="answer-3" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-3">Answer:</h4>
 <blockquote>
 <p>Nghe như là kiểu map vào 1 chỗ, nếu thế thì khi copy sẽ chỉ copy 1 lần, thay vì copy 2 lần.
 Còn nếu update thì sẽ xảy ra vụ thay đổi. Ê nghe giống con trỏ hay reference ở cpp nhỉ.</p>
 </blockquote>
-</div>
-</div>
-<div id="section-5" class="section level3">
-<h3>8.6</h3>
+<h3 id="86">8.6</h3>
 <p>Describe a mechanism by which one segment could belong to the address space of two different processes.</p>
-<div id="answer-4" class="section level4">
-<h4>Answer:</h4>
-</div>
-</div>
-<div id="section-6" class="section level3">
-<h3>8.7</h3>
+<h4 id="answer-4">Answer:</h4>
+<h3 id="87">8.7</h3>
 <p>Sharing segments among processes without requiring that they have the same segment number is possible in a dynamically linked segmentation system.</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same.</p></li>
-<li><p>Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same.</p></li>
-</ol>
-<div id="answer-5" class="section level4">
-<h4>Answer:</h4>
-</div>
-</div>
-<div id="section-7" class="section level3">
-<h3>8.8</h3>
+<p>a. Define a system that allows static linking and sharing of segments without requiring that the segment numbers be the same.</p>
+<p>b. Describe a paging scheme that allows pages to be shared without requiring that the page numbers be the same.</p>
+<h4 id="answer-5">Answer:</h4>
+<h3 id="88">8.8</h3>
 <p>In the IBM/370, memory protection is provided through the use of keys. A key is a 4-bit quantity. Each 2-K block of memory has a key (the storage key) associated with it. The CPU also has a key (the protection key) associated with it. A store operation is allowed only if both keys are equal or if either is 0. Which of the following memory-management schemes could be used successfully with this hardware?</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Bare machine</p></li>
-<li><p>Single-user system</p></li>
-<li><p>Multiprogramming with a fixed number of processes</p></li>
-<li><p>Multiprogramming with a variable number of processes</p></li>
-<li><p>Paging</p></li>
-<li><p>Segmentation</p></li>
-</ol>
-<div id="answer-6" class="section level4">
-<h4>Answer:</h4>
-</div>
-</div>
-<div id="section-8" class="section level3">
-<h3>9.1</h3>
+<p>a. Bare machine</p>
+<p>b. Single-user system</p>
+<p>c. Multiprogramming with a fixed number of processes</p>
+<p>d. Multiprogramming with a variable number of processes</p>
+<p>e. Paging</p>
+<p>f. Segmentation</p>
+<h4 id="answer-6">Answer:</h4>
+<h3 id="91">9.1</h3>
 <p>Under what circumstances do page faults occur? Describe the actions taken by the operating system when a page fault occurs.</p>
-<div id="answer-7" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-7">Answer:</h4>
 <blockquote>
 <p>_ the process tries to access a page that was not brought into memory. Access to a page marked invalid causes a page fault_. Vậy là nếu hệ thống đi vô trúng page không có trong mem là dính.</p>
 <p>ờ liệt kê lại nhỉ:</p>
+</blockquote>
 <ul>
 <li>Khi xảy ra page faults thì sẽ có trap, OS sẽ biết được.</li>
 <li>Os biết xong sẽ kiểm tra coi cái liên kết muốn truy cập (reference) hợp lệ không, nếu không sẽ hủy process. Nếu ok mà chưa load lên trên page thì sẽ load lên</li>
@@ -189,77 +117,65 @@ Còn nếu update thì sẽ xảy ra vụ thay đổi. Ê nghe giống con trỏ
 <li>Lên lịch cho disk để đọc cái page đó vào frame</li>
 <li>Khi đọc xong thì chỉnh sửa table bên trong của process và page table để thể hiện rằng page đã nằm trong mem</li>
 <li>Restart instruction bị interrupt bởi trap lúc nãy. Lúc này thì có thể chạy bình thường rồi vì page có trong mem.
-<img src="/post/2019-12-12-hệ-điều-hành-bộ-nhớ_files/Screenshot%20from%202019-12-15%2019-57-55.png" /></li>
+![](/post/2019-12-12-hệ-điều-hành-bộ-nhớ_files/Screenshot from 2019-12-15 19-57-55.png)</li>
 </ul>
-</blockquote>
-</div>
-</div>
-<div id="section-9" class="section level3">
-<h3>9.2</h3>
+<h3 id="92">9.2</h3>
 <p>Assume that you have a page-reference string for a process with m frames (initially all empty). The page-reference string has length p, and n distinct page numbers occur in it. Answer these questions for any page-replacement algorithms:</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>What is a lower bound on the number of page faults?</p></li>
-<li><p>What is an upper bound on the number of page faults?</p></li>
-</ol>
-<div id="answer-8" class="section level4">
-<h4>Answer:</h4>
+<p>a. What is a lower bound on the number of page faults?</p>
+<p>b. What is an upper bound on the number of page faults?</p>
+<h4 id="answer-8">Answer:</h4>
 <blockquote>
 <p>đọc lại phần cuối của 412, và đầu 413 để hiểu ý câu hỏi này</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>lower thì ngon nhất khi m = p, lúc này chỉ có n page fault.</p></li>
-<li><p>upper thì chắc là khi m bằng 1, lúc này thì luôn có page fault aka max = p</p></li>
-</ol>
+<p>a. lower thì ngon nhất khi m = p, lúc này chỉ có n page fault.</p>
+<p>b. upper thì chắc là khi m bằng 1, lúc này thì luôn có page fault aka max = p</p>
 </blockquote>
-</div>
-</div>
-<div id="section-10" class="section level3">
-<h3>9.3</h3>
+<h3 id="93">9.3</h3>
 <p>Consider the page table shown in Figure 9.30 for a system with 12-bit virtual and physical addresses and with 256-byte pages. The list of free page frames is D, E, F (that is, D is at the head of the list, E is second, and F is last).</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Page</th>
 <th>Page Frame</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>0</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>2</td>
 <td>C</td>
 </tr>
-<tr class="even">
+<tr>
 <td>3</td>
 <td>A</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>4</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>5</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>6</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr>
 <td>7</td>
 <td>–</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>8</td>
 <td>B</td>
 </tr>
-<tr class="even">
+<tr>
 <td>9</td>
 <td>0</td>
 </tr>
@@ -272,41 +188,31 @@ Còn nếu update thì sẽ xảy ra vụ thay đổi. Ê nghe giống con trỏ
 <li>700</li>
 <li>0FF</li>
 </ul>
-<div id="answer-9" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-9">Answer:</h4>
 <blockquote>
 <p>Đọc đề không hiểu ý ._.</p>
 </blockquote>
-</div>
-</div>
-<div id="section-11" class="section level3">
-<h3>9.4</h3>
+<h3 id="94">9.4</h3>
 <p>Consider the following page-replacement algorithms. Rank these algorithms on a five-point scale from “bad” to “perfect” according to their page-fault rate. Separate those algorithms that suffer from Belady’s anomaly from those that do not.</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>LRU replacement</p></li>
-<li><p>FIFO replacement</p></li>
-<li><p>Optimal replacement</p></li>
-<li><p>Second-chance replacement</p></li>
-</ol>
-<div id="answer-10" class="section level4">
-<h4>Answer:</h4>
+<p>a. LRU replacement</p>
+<p>b. FIFO replacement</p>
+<p>c. Optimal replacement</p>
+<p>d. Second-chance replacement</p>
+<h4 id="answer-10">Answer:</h4>
 <blockquote>
 <p>LRU 4, không dính Belady
 FIFO 1, dính Belady
 OPT 5, không dính
 2nd 3, trường hợp xấu nhất là giống FIFO nên chắc có dính</p>
 </blockquote>
-</div>
-</div>
-<div id="section-12" class="section level3">
-<h3>9.5</h3>
+<h3 id="95">9.5</h3>
 <p>Discuss the hardware support required to support demand paging.</p>
-<div id="answer-11" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-11">Answer:</h4>
 <blockquote>
 <p>Trích sách:</p>
 <p>The hardware to support demand paging is the same as the hardware for
 paging and swapping:</p>
+</blockquote>
 <ul>
 <li>Page table. This table has the ability to mark an entry invalid through a
 valid–invalid bit or a special value of protection bits.</li>
@@ -315,11 +221,7 @@ in main memory. The secondary memory is usually a high-speed disk. It is
 known as the swap device, and the section of disk used for this purpose is
 known as swap space</li>
 </ul>
-</blockquote>
-</div>
-</div>
-<div id="section-13" class="section level3">
-<h3>9.6</h3>
+<h3 id="96">9.6</h3>
 <p>An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:</p>
 <ul>
 <li>One percent of all instructions executed accessed a page other than
@@ -330,150 +232,114 @@ a page already in memory.</li>
 percent of the time.</li>
 </ul>
 <p>Calculate the effective instruction time on this system, assuming that the system is running one process only and that the processor is idle during drum transfers.</p>
-<div id="answer-12" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-12">Answer:</h4>
 <blockquote>
-
 </blockquote>
-</div>
-</div>
-<div id="section-14" class="section level3">
-<h3>9.7</h3>
+<h3 id="97">9.7</h3>
 <p>Consider the two-dimensional array A:</p>
 <p><code>int A[][] = new int[100][100];</code></p>
 <p>where <code>A[0][0]</code> is at location 200 in a paged memory system with pages of size 200. A small process that manipulates the matrix resides in page 0 (locations 0 to 199). Thus, every instruction fetch will be from page 0. For three page frames, how many page faults are generated by the following array-initialization loops? Use LRU replacement, and assume that page frame 1 contains the process and the other two are initially empty.</p>
-<ol style="list-style-type: lower-alpha">
-<li></li>
-</ol>
+<p>a.</p>
 <pre><code>for (int j = 0; j &lt; 100; j++)
   for (int i = 0; i &lt; 100; i++)
-    A[i][j] = 0;</code></pre>
-<ol start="2" style="list-style-type: lower-alpha">
-<li></li>
-</ol>
+    A[i][j] = 0;
+</code></pre><p>b.</p>
 <pre><code>for (int i = 0; i &lt; 100; i++)
   for (int j = 0; j &lt; 100; j++)
-    A[i][j] = 0;</code></pre>
-<div id="answer-13" class="section level4">
-<h4>Answer:</h4>
-</div>
-</div>
-<div id="section-15" class="section level3">
-<h3>9.8</h3>
-<p>Consider the following page reference string: 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6. How many page faults would occur for the following replacement algorithms, assuming one, two, three, four, five, six, and seven frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.
-- LRU replacement
-- FIFO replacement
-- Optimal replacement</p>
-<div id="answer-14" class="section level4">
-<h4>Answer:</h4>
+    A[i][j] = 0;
+</code></pre><h4 id="answer-13">Answer:</h4>
+<h3 id="98">9.8</h3>
+<p>Consider the following page reference string: 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6. How many page faults would occur for the following replacement algorithms, assuming one, two, three, four, five, six, and seven frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.</p>
+<ul>
+<li>LRU replacement</li>
+<li>FIFO replacement</li>
+<li>Optimal replacement</li>
+</ul>
+<h4 id="answer-14">Answer:</h4>
 <blockquote>
 <p>Vẽ bảng nào, làm nháp ở ngoài rồi nhá</p>
+</blockquote>
 <table>
 <thead>
-<tr class="header">
-<th align="left">#frame</th>
-<th align="left">LRU</th>
-<th align="left">FIFO</th>
-<th align="left">OPT</th>
+<tr>
+<th style="text-align:left">#frame</th>
+<th style="text-align:left">LRU</th>
+<th style="text-align:left">FIFO</th>
+<th style="text-align:left">OPT</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">1</td>
-<td align="left">20</td>
-<td align="left">20</td>
-<td align="left">20</td>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">20</td>
 </tr>
-<tr class="even">
-<td align="left">2</td>
-<td align="left">18</td>
-<td align="left">18</td>
-<td align="left">15</td>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">15</td>
 </tr>
-<tr class="odd">
-<td align="left">3</td>
-<td align="left">15</td>
-<td align="left">16</td>
-<td align="left">11</td>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">15</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">11</td>
 </tr>
-<tr class="even">
-<td align="left">4</td>
-<td align="left">10</td>
-<td align="left">14</td>
-<td align="left">8</td>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">8</td>
 </tr>
-<tr class="odd">
-<td align="left">5</td>
-<td align="left">9</td>
-<td align="left">10</td>
-<td align="left">7</td>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">7</td>
 </tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="left">7</td>
-<td align="left">10</td>
-<td align="left">7</td>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">7</td>
 </tr>
-<tr class="odd">
-<td align="left">7</td>
-<td align="left">7</td>
-<td align="left">7</td>
-<td align="left">7</td>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">7</td>
 </tr>
 </tbody>
 </table>
-</blockquote>
-</div>
-</div>
-<div id="section-16" class="section level3">
-<h3>9.9</h3>
+<h3 id="99">9.9</h3>
 <p>Suppose that you want to use a paging algorithm that requires a reference bit (such as second-chance replacement or working-set model), but the hardware does not provide one. Sketch how you could simulate a reference bit even if one were not provided by the hardware, or explain why it is not possible to do so. If it is possible, calculate what the cost would be.</p>
-<div id="answer-15" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-15">Answer:</h4>
 <blockquote>
-<p>Ờ … gì chứ ._.</p>
+<p>Ờ &hellip; gì chứ ._.</p>
 </blockquote>
-</div>
-</div>
-<div id="section-17" class="section level3">
-<h3>9.10</h3>
+<h3 id="910">9.10</h3>
 <p>You have devised a new page-replacement algorithm that you think may be optimal. In some contorted test cases, Belady’s anomaly occurs. Is the new algorithm optimal? Explain your answer.</p>
-<div id="answer-16" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-16">Answer:</h4>
 <blockquote>
 <p>Sao optimal được, OPT không bị Belady mà thằng này bị thì làm sao cái này optimal được ._.</p>
 </blockquote>
-</div>
-</div>
-<div id="section-18" class="section level3">
-<h3>9.11</h3>
+<h3 id="911">9.11</h3>
 <p>Segmentation is similar to paging but uses variable-sized “pages.” Define two segment-replacement algorithms, one based on the FIFO pagereplacement scheme and the other on the LRU page-replacement scheme. Remember that since segments are not the same size, the segment that is chosen for replacement may be too small to leave enough consecutive locations for the needed segment. Consider strategies for systems where segments cannot be relocated and strategies for systems where they can.</p>
-<div id="answer-17" class="section level4">
-<h4>Answer:</h4>
+<h4 id="answer-17">Answer:</h4>
 <blockquote>
-<p>Trên lớp không học :’(</p>
+<p>Trên lớp không học :'(</p>
 </blockquote>
-</div>
-</div>
-<div id="section-19" class="section level3">
-<h3>9.12</h3>
+<h3 id="912">9.12</h3>
 <p>Consider a demand-paged computer system where the degree of multiprogramming is currently fixed at four. The system was recently measured to determine utilization of the CPU and the paging disk. Three alternative results are shown below. For each case, what is happening? Can the degree of multiprogramming be increased to increase the CPU utilization? Is the paging helping?</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>CPU utilization 13 percent; disk utilization 97 percent</p></li>
-<li><p>CPU utilization 87 percent; disk utilization 3 percent</p></li>
-<li><p>CPU utilization 13 percent; disk utilization 3 percent</p></li>
-</ol>
-<div id="answer-18" class="section level4">
-<h4>Answer:</h4>
-</div>
-</div>
-<div id="section-20" class="section level3">
-<h3>9.13</h3>
+<p>a. CPU utilization 13 percent; disk utilization 97 percent</p>
+<p>b. CPU utilization 87 percent; disk utilization 3 percent</p>
+<p>c. CPU utilization 13 percent; disk utilization 3 percent</p>
+<h4 id="answer-18">Answer:</h4>
+<h3 id="913">9.13</h3>
 <p>We have an operating system for a machine that uses base and limit registers, but we have modified the machine to provide a page table. Can the page tables be set up to simulate base and limit registers? How can they be, or why can they not be?</p>
-<div id="answer-19" class="section level4">
-<h4>Answer:</h4>
-</div>
-</div>
+<h4 id="answer-19">Answer:</h4>
 
 </main>
 

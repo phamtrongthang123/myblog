@@ -6,11 +6,7 @@
     <description>Recent content in Experiences on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/experiences/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/categories/experiences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hướng dẫn setup lại nếu lỡ cài lại OS (chẳng hạn Ubuntu)</title>
       <link>/2019/12/15/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-setup-l%E1%BA%A1i-n%E1%BA%BFu-l%E1%BB%A1-c%C3%A0i-l%E1%BA%A1i-os-ch%E1%BA%B3ng-h%E1%BA%A1n-ubuntu/</link>
@@ -28,7 +24,7 @@
       
       <guid>/2019/07/22/come-back-and-change-the-way-writing-blog/</guid>
       <description>Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com
-Well that&#39;s all. The only reason I came back is my condition got worse. Hopefully it helps me &amp;lsquo;remember&amp;rsquo; like I thought.</description>
+Well that&amp;rsquo;s all. The only reason I came back is my condition got worse. Hopefully it helps me &amp;lsquo;remember&amp;rsquo; like I thought.</description>
     </item>
     
     <item>
@@ -37,7 +33,7 @@ Well that&#39;s all. The only reason I came back is my condition got worse. Hope
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/note/2018/12/09/little-thought-about-pressure/</guid>
-      <description>Now I&#39;m preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you.
+      <description>Now I&amp;rsquo;m preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you.
 I hate Grades, never love that. Never. nerver</description>
     </item>
     

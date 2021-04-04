@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hướng dẫn setup lại nếu lỡ cài lại OS (chẳng hạn Ubuntu)</title>
       <link>/2019/12/15/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-setup-l%E1%BA%A1i-n%E1%BA%BFu-l%E1%BB%A1-c%C3%A0i-l%E1%BA%A1i-os-ch%E1%BA%B3ng-h%E1%BA%A1n-ubuntu/</link>
@@ -22,35 +18,13 @@
     </item>
     
     <item>
-      <title>Hệ điều hành: Bài toán xếp lịch</title>
-      <link>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%C3%A0i-to%C3%A1n-x%E1%BA%BFp-l%E1%BB%8Bch/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%C3%A0i-to%C3%A1n-x%E1%BA%BFp-l%E1%BB%8Bch/</guid>
-      <description>6.1 6.2 6.3 6.4 6.5 6.6 6.30 6.31   6.1 A CPU-scheduling algorithm determines an order for the execution of its scheduled processes. Given n processes to be scheduled on one processor, how many different schedules are possible? Give a formula in terms of n.
-Answer:  \(n!\) ._.
-   6.2 Explain the difference between preemptive and nonpreemptive scheduling.
-Answer:  Under nonpreemptive scheduling, once the CPU has been allocated to a process, the process keeps the CPU until it releases the CPU either by terminating or by switching to the waiting state</description>
-    </item>
-    
-    <item>
-      <title>Hệ điều hành: bộ nhớ</title>
-      <link>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%E1%BB%99-nh%E1%BB%9B/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/12/12/h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh-b%E1%BB%99-nh%E1%BB%9B/</guid>
-      <description>8.1 8.2 8.3 8.4 8.5 8.6 8.7 8.8 9.1 9.2 9.3 9.4 9.5 9.6 9.7 9.8 9.9 9.10 9.11 9.12 9.13   Bắt đầu ôn bài thôi nhỉ. Từ đây sẽ là chuỗi bài ôn bài HDH cuối kì cho mình. Mình sẽ đi theo hướng giải bt vì nếu tóm tắt sẽ không đủ thời gian để hoàn thành. :(
-8.1 Name two differences between logical and physical addresses</description>
-    </item>
-    
-    <item>
       <title>Come back and change the way writing blog!</title>
       <link>/2019/07/22/come-back-and-change-the-way-writing-blog/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/07/22/come-back-and-change-the-way-writing-blog/</guid>
       <description>Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com
-Well that&#39;s all. The only reason I came back is my condition got worse. Hopefully it helps me &amp;lsquo;remember&amp;rsquo; like I thought.</description>
+Well that&amp;rsquo;s all. The only reason I came back is my condition got worse. Hopefully it helps me &amp;lsquo;remember&amp;rsquo; like I thought.</description>
     </item>
     
     <item>
