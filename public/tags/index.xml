@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Application</title>
+      <link>/tags/application/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/application/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fun stuff</title>
+      <link>/tags/fun-stuff/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fun-stuff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VI</title>
+      <link>/tags/vi/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vi/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Ubuntu</title>
       <link>/tags/ubuntu/</link>
@@ -31,24 +58,6 @@
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VI</title>
-      <link>/tags/vi/</link>
-      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/vi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Application</title>
-      <link>/tags/application/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/application/</guid>
       <description></description>
     </item>
     
@@ -85,15 +94,6 @@
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/union-find/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fun stuff</title>
-      <link>/tags/fun-stuff/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/fun-stuff/</guid>
       <description></description>
     </item>
     

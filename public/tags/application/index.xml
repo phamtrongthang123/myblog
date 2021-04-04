@@ -6,7 +6,16 @@
     <description>Recent content in Application on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/application/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Probabilistic Programming</title>
+      <link>/2021/04/04/exploring-probabilistic-programmin/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/04/04/exploring-probabilistic-programmin/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Note Week 1 Algs part 1 (Princeton)</title>
       <link>/note/2018/02/09/note-week-1-algs-part-1-princeton/</link>
