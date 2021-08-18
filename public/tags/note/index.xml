@@ -18,6 +18,17 @@
     </item>
     
     <item>
+      <title>Common Posterior distribution memo</title>
+      <link>/note/2021/08/18/common-posterior-distribution-memo/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2021/08/18/common-posterior-distribution-memo/</guid>
+      <description>and their related information, theorem, corollary, &amp;hellip;
+Introduction I don&amp;rsquo;t want to look up wiki too much for common distribution so I write them all here. The title is posterior, but actually I write all information that I may look up later. They probably useless most of the time, but well, it&amp;rsquo;s better than looking up all stuff from scratch.
+The main motivation is to look up posterior later, so that&amp;rsquo;s the name.</description>
+    </item>
+    
+    <item>
       <title>Implicit notation in Kullback-Leibler divergence</title>
       <link>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>

@@ -47,7 +47,7 @@ H(p, q)=H(p)+D_{\mathrm{KL}}(p \| q)
 $$`
 
 or
- 
+
 `$$
 D_{\mathrm{KL}}(p \| q)= H(p, q) - H(p) \\ 
 \text{Div = CrossEntropy - AnchorEntropy}
