@@ -2,31 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/application/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <loc>/note/2021/08/18/bleu-rouge-l-meteor-cider.-a-brief-talk/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <loc>/tags/en/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/experiences/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <loc>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2021/04/04/exploring-probabilistic-programmin/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <loc>/tags/note/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/fun-stuff/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <loc>/note/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/vi/</loc>
+    <loc>/tags/application/</loc>
+    <lastmod>2021-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2021-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/experiences/</loc>
+    <lastmod>2021-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/fun-stuff/</loc>
+    <lastmod>2021-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2021-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/2021/04/05/study-computer-science/</loc>
+    <lastmod>2021-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/2021/04/04/exploring-probabilistic-programming/</loc>
     <lastmod>2021-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2019/12/15/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-setup-l%E1%BA%A1i-n%E1%BA%BFu-l%E1%BB%A1-c%C3%A0i-l%E1%BA%A1i-os-ch%E1%BA%B3ng-h%E1%BA%A1n-ubuntu/</loc>
@@ -38,28 +53,13 @@
     <loc>/2019/07/22/come-back-and-change-the-way-writing-blog/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/en/</loc>
-    <lastmod>2019-07-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/r-markdown/</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/note/2018/12/09/little-thought-about-pressure/</loc>
-    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/note/</loc>
-    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/note/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</loc>
-    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/algorithms/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/coursera/</loc>
-    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/note/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/note/2018/02/09/note-week-1-algs-part-1-princeton/</loc>
@@ -69,6 +69,9 @@
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/union-find/</loc>
+    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/vi/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>

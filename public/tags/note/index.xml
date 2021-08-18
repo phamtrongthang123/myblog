@@ -6,7 +6,29 @@
     <description>Recent content in Note on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BLEU, ROUGE-L, METEOR, CIDEr. A brief talk</title>
+      <link>/note/2021/08/18/bleu-rouge-l-meteor-cider.-a-brief-talk/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2021/08/18/bleu-rouge-l-meteor-cider.-a-brief-talk/</guid>
+      <description>Timeline Main timeline:
+ July 2002: Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu from IBM published BLEU at ACL. July 25 - 26, 2004: Chin-Yew Lin from Information Sciences Institute, University of Southern California published ROUGE at the Workshop on Text Summarization Branches Out (WAS 2004). 2005: Satanjeev Banerjee and Alon Lavie from Language Technologies Institute, Carnegie Mellon University published METEOR at ACL 2005. And they continue published papers on each variant (or improved version) at ACL 2007, ACL 2008, Springer article 2010, NAACL/HLT 2010, ACL 2010, EMNLP 2011, and EACL 2014.</description>
+    </item>
+    
+    <item>
+      <title>Implicit notation in Kullback-Leibler divergence</title>
+      <link>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</guid>
+      <description>**What do we know about KL div, the definition? ** $$ D_{\mathrm{KL}}(P | Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right) $$ **The behaviour?**
+Fitting a unimodal approximating distribution q (red) to a multimodal $p$ (blue). Using KL(p || q) leads to a q that tries to cover both modes (a). However, using $\mathrm{KL}(\mathrm{q}|| \mathrm{p})$ forces $q$ to choose one of the two modes of $p(b, c)$.
+Well, you see
+I used to use this notation instead as definition: $$ D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x) $$ Because it is easier to rememeber, I mean there are two minus sign!</description>
+    </item>
+    
     <item>
       <title>Note Week 1 Algs part 1 (Princeton)</title>
       <link>/note/2018/02/09/note-week-1-algs-part-1-princeton/</link>

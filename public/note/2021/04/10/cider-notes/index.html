@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CIDEr notes | Trong-Thang Pham&#39;s Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="https://github.com/phamtrongthang123">GitHub</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">CIDEr notes</span></h1>
+
+<h2 class="date">2021/04/10</h2>
+</div>
+
+<main>
+<p>What is CIDEr?</p>
+<p>CIDEr is a metric that &ldquo;measures the similarity of a generated sentence against ground truth sentences written by humans&rdquo;.</p>
+<p>What is similarity in here?</p>
+<p>That is the way to say if the target sentence could lend in the major sentences, in other word, is it similar to other sentences that you cannot tell much difference.</p>
+<p>At the moment when the paper came out, existing dataset have too few ground truth sentences. Maximum is five sentences per image, which, according to the CIDEr&rsquo;s authors,  are not sufficient for measuring how a “majority” of humans would describe an image. Later on they found that 50 descriptions is enough. Now they call the whole &ldquo;similarity&rdquo; with each others is consensus.</p>
+<p>How to compute CIDEr?</p>
+<p>It&rsquo;s a kind of TF-IDF.</p>
+<p>Image (I_i) in</p>
+<p>$$
+\begin{array}{c}
+g_{k}\left(s_{i j}\right)= 
+\frac{h_{k}\left(s_{i j}\right)}{\sum_{\omega_{l} \in \Omega} h_{l}\left(s_{i j}\right)} \log \left(\frac{|I|}{\sum_{I_{p} \in I} \min \left(1, \sum_{q} h_{k}\left(s_{p q}\right)\right)}\right)
+\end{array}
+$$</p>
+<p>a</p>
+<p>a</p>
+<p>$$
+\operatorname{CIDEr}<em>{n}\left(c</em>{i}, S_{i}\right)=\frac{1}{m} \sum_{j} \frac{\boldsymbol{g}^{n}\left(c_{i}\right) \cdot \boldsymbol{g}^{\boldsymbol{n}}\left(s_{i j}\right)}{\left|\boldsymbol{g}^{\boldsymbol{n}}\left(c_{i}\right)\right|\left|\boldsymbol{g}^{\boldsymbol{n}}\left(s_{i j}\right)\right|}
+$$</p>
+<p>a</p>
+<p>a</p>
+<p>$$
+\operatorname{CIDEr}\left(c_{i}, S_{i}\right)=\sum_{n=1}^{N} w_{n} \operatorname{CIDEr}_{n}\left(c_{i}, S_{i}\right)
+$$</p>
+<p>a</p>
+<p>What is n-gram?</p>
+<p>&ldquo;good morning&rdquo;, 3-gram in character we have</p>
+<p>&ldquo;goo&rdquo;, &ldquo;ood&rdquo;, &ldquo;od &ldquo;, &ldquo;d m&rdquo;, &quot; mo&rdquo;, &ldquo;mor&rdquo; and so forth</p>
+<p>But in CIDEr, it&rsquo;s n-gram in words, for example (from wikipedia),</p>
+<p>&ldquo;the dog smelled like a skunk&rdquo;</p>
+<p>=&gt; &ldquo;# the dog&rdquo;, &ldquo;the dog smelled&rdquo;, &ldquo;dog smelled like&rdquo;, &ldquo;smelled like a&rdquo;, &ldquo;like a skunk&rdquo; and &ldquo;a skunk #&rdquo;.</p>
+<p>The paper didn&rsquo;t say the &ldquo;#&rdquo; is used or not, but for now let&rsquo;s just go with this as example for what is n-gram.</p>
+<p>Why use CIDEr?</p>
+
+</main>
+
+  <footer>
+  <script src="//yihui.org/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+  
+  </footer>
+  </body>
+</html>
+

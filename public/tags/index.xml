@@ -6,11 +6,29 @@
     <description>Recent content in Tags on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EN</title>
+      <link>/tags/en/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note</title>
+      <link>/tags/note/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/note/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Application</title>
       <link>/tags/application/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/application/</guid>
       <description></description>
@@ -19,18 +37,9 @@
     <item>
       <title>Fun stuff</title>
       <link>/tags/fun-stuff/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/fun-stuff/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VI</title>
-      <link>/tags/vi/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/vi/</guid>
       <description></description>
     </item>
     
@@ -40,15 +49,6 @@
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EN</title>
-      <link>/tags/en/</link>
-      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/en/</guid>
       <description></description>
     </item>
     
@@ -71,15 +71,6 @@
     </item>
     
     <item>
-      <title>Note</title>
-      <link>/tags/note/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/note/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Princeton</title>
       <link>/tags/princeton/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
@@ -94,6 +85,15 @@
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/union-find/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VI</title>
+      <link>/tags/vi/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vi/</guid>
       <description></description>
     </item>
     

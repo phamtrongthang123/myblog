@@ -6,14 +6,26 @@
     <description>Recent content in Application on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/application/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Studying Computer Science</title>
+      <link>/2021/04/05/study-computer-science/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/04/05/study-computer-science/</guid>
+      <description>Many study CS to find jobs, I study CompSci because:
+ I want to know what fun about this field I want to write my own:  Android App Cross platform app Website Game Programming Language   I want to crack some program, hack some web. Legally of course. I want to participate in some competitions. I want to try to follow the trend of this field, like doing Machine Learning / Deep Learning, the bitcoin / blockchain things.</description>
+    </item>
+    
     <item>
       <title>Exploring Probabilistic Programming</title>
-      <link>/2021/04/04/exploring-probabilistic-programmin/</link>
+      <link>/2021/04/04/exploring-probabilistic-programming/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/04/04/exploring-probabilistic-programmin/</guid>
-      <description></description>
+      <guid>/2021/04/04/exploring-probabilistic-programming/</guid>
+      <description>I asked a person who has higher experience than me to explore with me, just help me not being lonely.
+The framework existed at that moment sucks, not stable, documents was lacking, hard to install or develop, pymc3 use Theano, pymc4 authors adviced to not use it, pyro was lacking documents.
+I mainly looking into engineer stuff like how to use, what&amp;rsquo;s in the framework. And later I looked up to Causal Inference, where I try to write a document about a paper called CEVAE apply VAE to sold the Causal Inference problem.</description>
     </item>
     
     <item>

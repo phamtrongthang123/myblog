@@ -6,14 +6,48 @@
     <description>Recent content on Trong-Thang Pham&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BLEU, ROUGE-L, METEOR, CIDEr. A brief talk</title>
+      <link>/note/2021/08/18/bleu-rouge-l-meteor-cider.-a-brief-talk/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2021/08/18/bleu-rouge-l-meteor-cider.-a-brief-talk/</guid>
+      <description>Timeline Main timeline:
+ July 2002: Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu from IBM published BLEU at ACL. July 25 - 26, 2004: Chin-Yew Lin from Information Sciences Institute, University of Southern California published ROUGE at the Workshop on Text Summarization Branches Out (WAS 2004). 2005: Satanjeev Banerjee and Alon Lavie from Language Technologies Institute, Carnegie Mellon University published METEOR at ACL 2005. And they continue published papers on each variant (or improved version) at ACL 2007, ACL 2008, Springer article 2010, NAACL/HLT 2010, ACL 2010, EMNLP 2011, and EACL 2014.</description>
+    </item>
+    
+    <item>
+      <title>Implicit notation in Kullback-Leibler divergence</title>
+      <link>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</guid>
+      <description>**What do we know about KL div, the definition? ** $$ D_{\mathrm{KL}}(P | Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right) $$ **The behaviour?**
+Fitting a unimodal approximating distribution q (red) to a multimodal $p$ (blue). Using KL(p || q) leads to a q that tries to cover both modes (a). However, using $\mathrm{KL}(\mathrm{q}|| \mathrm{p})$ forces $q$ to choose one of the two modes of $p(b, c)$.
+Well, you see
+I used to use this notation instead as definition: $$ D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x) $$ Because it is easier to rememeber, I mean there are two minus sign!</description>
+    </item>
+    
+    <item>
+      <title>Studying Computer Science</title>
+      <link>/2021/04/05/study-computer-science/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/04/05/study-computer-science/</guid>
+      <description>Many study CS to find jobs, I study CompSci because:
+ I want to know what fun about this field I want to write my own:  Android App Cross platform app Website Game Programming Language   I want to crack some program, hack some web. Legally of course. I want to participate in some competitions. I want to try to follow the trend of this field, like doing Machine Learning / Deep Learning, the bitcoin / blockchain things.</description>
+    </item>
+    
     <item>
       <title>Exploring Probabilistic Programming</title>
-      <link>/2021/04/04/exploring-probabilistic-programmin/</link>
+      <link>/2021/04/04/exploring-probabilistic-programming/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/04/04/exploring-probabilistic-programmin/</guid>
-      <description></description>
+      <guid>/2021/04/04/exploring-probabilistic-programming/</guid>
+      <description>I asked a person who has higher experience than me to explore with me, just help me not being lonely.
+The framework existed at that moment sucks, not stable, documents was lacking, hard to install or develop, pymc3 use Theano, pymc4 authors adviced to not use it, pyro was lacking documents.
+I mainly looking into engineer stuff like how to use, what&amp;rsquo;s in the framework. And later I looked up to Causal Inference, where I try to write a document about a paper called CEVAE apply VAE to sold the Causal Inference problem.</description>
     </item>
     
     <item>
@@ -34,25 +68,6 @@
       <guid>/2019/07/22/come-back-and-change-the-way-writing-blog/</guid>
       <description>Little changes, I have just deleted my old repo, move content folder to another repo, using blogdown this time, deploy on netlify.com
 Well that&amp;rsquo;s all. The only reason I came back is my condition got worse. Hopefully it helps me &amp;lsquo;remember&amp;rsquo; like I thought.</description>
-    </item>
-    
-    <item>
-      <title>Little thought about pressure</title>
-      <link>/note/2018/12/09/little-thought-about-pressure/</link>
-      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/note/2018/12/09/little-thought-about-pressure/</guid>
-      <description>Now I&amp;rsquo;m preparing for final exam. There are a lot of pressure because Grades are important, people look at those and judge you.
-I hate Grades, never love that. Never. nerver</description>
-    </item>
-    
-    <item>
-      <title>Vật vã thời gian đầu Đại Học</title>
-      <link>/note/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</link>
-      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/note/2018/03/18/v%E1%BA%ADt-v%C3%A3-th%E1%BB%9Di-gian-%C4%91%E1%BA%A7u-%C4%91%E1%BA%A1i-h%E1%BB%8Dc/</guid>
-      <description>Tôi vốn rất thích học, nhất là khi trong môi trường được kích thích. Hiện tại đã gần giữa học kì II rồi, nhìn lại tôi thấy mình tham quá. Tôi đã học một lượng kiến thức mà tôi biết tôi có thể quên trong tương lai, và gần hết tất cả, đối với thời gian sau này, tôi cảm thấy không quan trọng. Học nhiều là tốt nhưng nếu học một cách lạc lối thì lãng phí thời gian.</description>
     </item>
     
     <item>
