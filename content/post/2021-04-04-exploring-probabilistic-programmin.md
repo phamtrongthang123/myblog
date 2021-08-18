@@ -21,8 +21,8 @@ To be honest I am not really understand what is pyro capable of.
 
 Happy when Judea Pearl like my comment on his tweet, my tutorial got accept into Pyro main page. 
 
-Judea tweeted about ...
+Judea tweeted about somebody don't understand why we have to name so many simple stuff. I comment that it is the same as when we are coding, we want to wrap as much as possible to increase the abstraction level.
 
 My tutorial wrote about how to implement MLE and MAP in pyro, pretty simple but no one has written about it yet. 
 
- 
+ Why am i writing those stuff anyway. 

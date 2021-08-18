@@ -54,18 +54,9 @@
 <p>Modified precision a bit and a length penalty, there we have BLEU.</p>
 <h4 id="cider">CIDEr</h4>
 <p>CIDEr is compute with 3 equations like this, detail about the notation please read the paper.</p>
-<p>$$
-\begin{array}{c}
-g_{k}\left(s_{i j}\right)= 
-\frac{h_{k}\left(s_{i j}\right)}{\sum_{\omega_{l} \in \Omega} h_{l}\left(s_{i j}\right)} \log \left(\frac{|I|}{\sum_{I_{p} \in I} \min \left(1, \sum_{q} h_{k}\left(s_{p q}\right)\right)}\right)
-\end{array}
-$$</p>
-<p>$$
-\operatorname{CIDEr}<em>{n}\left(c</em>{i}, S_{i}\right)=\frac{1}{m} \sum_{j} \frac{\boldsymbol{g}^{n}\left(c_{i}\right) \cdot \boldsymbol{g}^{\boldsymbol{n}}\left(s_{i j}\right)}{\left|\boldsymbol{g}^{\boldsymbol{n}}\left(c_{i}\right)\right|\left|\boldsymbol{g}^{\boldsymbol{n}}\left(s_{i j}\right)\right|}
-$$</p>
-<p>$$
-\operatorname{CIDEr}\left(c_{i}, S_{i}\right)=\sum_{n=1}^{N} w_{n} \operatorname{CIDEr}_{n}\left(c_{i}, S_{i}\right)
-$$</p>
+<p><code>$$ \begin{array}{c} g_{k}\left(s_{i j}\right)=  \frac{h_{k}\left(s_{i j}\right)}{\sum_{\omega_{l} \in \Omega} h_{l}\left(s_{i j}\right)} \log \left(\frac{|I|}{\sum_{I_{p} \in I} \min \left(1, \sum_{q} h_{k}\left(s_{p q}\right)\right)}\right) \end{array} $$</code></p>
+<p><code>$$ \operatorname{CIDEr}_{n}\left(c_{i}, S_{i}\right)=\frac{1}{m} \sum_{j} \frac{\boldsymbol{g}^{n}\left(c_{i}\right) \cdot \boldsymbol{g}^{\boldsymbol{n}}\left(s_{i j}\right)}{\left\|\boldsymbol{g}^{\boldsymbol{n}}\left(c_{i}\right)\right\|\left\|\boldsymbol{g}^{\boldsymbol{n}}\left(s_{i j}\right)\right\|} $$</code></p>
+<p><code>$$ \operatorname{CIDEr}\left(c_{i}, S_{i}\right)=\sum_{n=1}^{N} w_{n} \operatorname{CIDEr}_{n}\left(c_{i}, S_{i}\right) $$</code></p>
 <p>For each n-gram, compute their &ldquo;weight&rdquo;, counting how many images that contain it, then reverse, then log, we have the right term of first equation. For that same n-gram, we count number of it in the sentence, then count on the whole refs, divide then, we have left term. Hence the weight. Combine those weights into a vector corresponding to a sequence of n-gram (from a sentence, either candidate or ref), compute cosine similarity, we have the n-gram CIDEr, combine all <code>n</code> for n-gram, we have final CIDEr.</p>
 <p>The thing is, CIDEr don&rsquo;t use F-score. This makes it special, does not mean it is good enough though.</p>
 <h4 id="the-others">The others</h4>
@@ -75,7 +66,8 @@ $$</p>
 <li>SPICE: they convert the sentence to semantic graph (counter the disavantage of match n-gram where semantic is not accounted for), they use a model or algorithm for this. Then extract tuples of objects, attributes, and relationships, then count number of match, then here we go again to the F-score.</li>
 </ul>
 <p>If you ask me which one is the best, I would vote SPICE and METEOR, but which one I would use to train my model, sadly I&rsquo;ll choose CIDEr, because it fasts.</p>
-<p>Anyway, the thing with the others is that they all use F-score, even though, you know, F-score is just a combination of P and R. To be honest, at this point, I don&rsquo;t know why F-score.</p>
+<p>Anyway, the thing with the others is that they all use F-score, even though, you know, F-score is just a combination of P and R.</p>
+<p><strong>To be honest, at this point, I don&rsquo;t know why F-score.</strong></p>
 <p>You see, Harmonic mean in naive math is to compute the average, where we fix the distance right? I mean distance / time, if we fix time, we use arimethic mean, fix distance we use harmonic mean. But this does not bring any bell to F-score, there is no analogy here.</p>
 <p>Maybe I will find the answer at later date.</p>
 

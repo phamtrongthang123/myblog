@@ -23,10 +23,12 @@
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>/note/2021/08/18/implicit-notation-in-kullback-leibler-divergence/</guid>
-      <description>**What do we know about KL div, the definition? ** $$ D_{\mathrm{KL}}(P | Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right) $$ **The behaviour?**
+      <description>What do we know about KL div, the definition?
+$$D_{\mathrm{KL}}(P \| Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right)$$
+The behaviour?
 Fitting a unimodal approximating distribution q (red) to a multimodal $p$ (blue). Using KL(p || q) leads to a q that tries to cover both modes (a). However, using $\mathrm{KL}(\mathrm{q}|| \mathrm{p})$ forces $q$ to choose one of the two modes of $p(b, c)$.
 Well, you see
-I used to use this notation instead as definition: $$ D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x) $$ Because it is easier to rememeber, I mean there are two minus sign!</description>
+I used to use this notation instead as definition: $$D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x)$$ Because it is easier to rememeber, I mean there are two minus sign!</description>
     </item>
     
     <item>

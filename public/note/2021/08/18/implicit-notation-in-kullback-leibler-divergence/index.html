@@ -36,18 +36,14 @@
 </div>
 
 <main>
-<p>**What do we know about KL div, the definition? **
-$$
-D_{\mathrm{KL}}(P | Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right)
-$$
-**The behaviour?**</p>
+<p><strong>What do we know about KL div, the definition?</strong></p>
+<p><code>$$ D_{\mathrm{KL}}(P \| Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right) $$</code></p>
+<p><strong>The behaviour?</strong></p>
 <p><img src="https://ermongroup.github.io/cs228-notes/assets/img/kldiv.png" alt="Fitting a unimodal approximating distribution q (red) to a multimodal p (blue). Using KL(p||q) leads to a q that tries to cover both modes (a). However, using KL(q||p) forces q to choose one of the two modes of p (b, c)."></p>
-<p>Fitting a unimodal approximating distribution q (red) to a multimodal $p$ (blue). Using KL(p || q) leads to a q that tries to cover both modes (a). However, using $\mathrm{KL}(\mathrm{q}|| \mathrm{p})$ forces $q$ to choose one of the two modes of $p(b, c)$.</p>
+<p>Fitting a unimodal approximating distribution q (red) to a multimodal $p$ (blue). Using KL(p || q) leads to a q that tries to cover both modes (a). However, using <code>$\mathrm{KL}(\mathrm{q}|| \mathrm{p})$</code> forces <code>$q$</code> to choose one of the two modes of <code>$p(b, c)$</code>.</p>
 <p><strong>Well, you see</strong></p>
 <p>I used to use this notation instead as definition:
-$$
-D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x)
-$$
+<code>$$ D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x) $$</code>
 Because it is easier to rememeber, I mean there are two minus sign!</p>
 <p>But later date when I notice the behaviour as the above image, there is something new clicking in my head.</p>
 <p><strong>The left term is meant to be smaller than the right term.</strong></p>
@@ -56,24 +52,19 @@ Because it is easier to rememeber, I mean there are two minus sign!</p>
 <p><code>Using KL(p||q) leads to a q that tries to cover both modes</code></p>
 </li>
 <li>
-<p><code>Using KL(q||p) forces q to choose one of the two modes of p$.</code> &lt;= This also mean: Using KL(p || q) leads to a p <strong>that tries fit into</strong> q.</p>
+<p><code>Using KL(q||p) forces q to choose one of the two modes of p.</code> &lt;= This also mean: Using KL(p || q) leads to p <strong>tries fit into</strong> q.</p>
 </li>
 </ul>
-<p>The new connection here is, $p \in q$. right? , the left term p is trying to be a component of the right term q.</p>
+<p>The new connection here is, <code>$p \in q$</code>. right? , the left term p is trying to be a component of the right term q.</p>
 <p><strong>The cross entropy is also funny</strong></p>
 <p>You already know that 
-$$
-H(p, q)=H(p)+D_{\mathrm{KL}}(p | q)
-$$
-or 
-$$
-D_{\mathrm{KL}}(p | q)= H(p, q) - H(p) \ 
-\text{Div = CrossEntropy - AnchorEntropy}
-$$
-The equation makes me think: &ldquo;They really hate p, dont they?&rdquo;</p>
+<code>$$ H(p, q)=H(p)+D_{\mathrm{KL}}(p \| q) $$</code></p>
+<p>or</p>
+<p><code>$$ D_{\mathrm{KL}}(p \| q)= H(p, q) - H(p) \\  \text{Div = CrossEntropy - AnchorEntropy} $$</code></p>
+<p>The equation makes me think: &ldquo;They really hate p, dont they?&rdquo;</p>
 <p>They want to make the p as unimportant as possible or something.</p>
 <p>It&rsquo;s just a matter of saying, but the relationship is clear that <strong>p is meant to be belong to q</strong>.</p>
-<p>Bluntly, those implicit meaning just to help myself to not mistake notation anymore. They won&rsquo;t help you choose which one to work with anyway. Maybe I will use $D_{\mathrm{KL}}(p \in q)$ for the fun of it.</p>
+<p>Bluntly, those implicit meaning just to help myself to not mistake notation anymore. They won&rsquo;t help you choose which one to work with anyway. Maybe I will use <code>$D_{\mathrm{KL}}(p \in q)$</code> for the fun of it.</p>
 
 </main>
 
