@@ -9,7 +9,7 @@ tags:
 
 Collider bias takes place in this causal graph: 
 
-![image-20210826111242464](imgs\collider-bias\image-20210826105438965.png)
+![image-20210826105438965.png (920×545) (raw.githubusercontent.com)](https://raw.githubusercontent.com/phamtrongthang123/myblog/master/content/note/imgs/collider-bias/image-20210826105438965.png)
 
 
 
@@ -21,7 +21,7 @@ For example, we toss 2 coins independently, 100 times. Now we set a rule: we onl
 
 But what about other harder example, Monty hall, for example, A is your pick, B is the car position, C is which door to open (from MC point of view), the rule is now after you pick, the MC opens the door that does not contain the prize, then you could switch. This is another form of informal condition that causes collider bias, as you already know, the probability if you switch is 2/3. Now is your exercise: Can you find a way to reconstruct this into rigorous condition? 
 
-![image-20210826111242464](imgs\collider-bias\image-20210826111242464.png)
+![image-20210826111242464.png (1068×679) (raw.githubusercontent.com)](https://raw.githubusercontent.com/phamtrongthang123/myblog/master/content/note/imgs/collider-bias/image-20210826111242464.png)
 
 As the above figure (thanks [1] for this beautiful graph), after we condition with rules, the selected observations now are only a part of the population. the blue Corr line (interrupt line) which is shown as there is no relationship, changed into the red line, which shows that A and B heavily relate to each other. 
 
