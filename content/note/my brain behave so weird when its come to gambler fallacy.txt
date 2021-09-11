@@ -1,0 +1,25 @@
+ví dụ mình biết rõ là tung đồng xu
+lần 1 không liên quan gì lần 2
+fair coin đi
+
+mình luôn biết là không gì cản trở việc đồng xu tung ra không chứa head lần nào
+
+nhưng nó vẫn sẽ hội tụ về prob fair
+
+.-.
+
+kiểu em đang nghĩ tới gambler fallacy, nó chỉ state là lần tung n+1 không có xs cao hơn lần n nếu không chưa head
+
+nếu là fair coin
+
+nhưng chắc chắc tung tới mức nào đó thì head sẽ phải xuất hiện, vì để đảm bảo theo định nghĩa của nó là fair coin
+
+mình chỉ k biết là khi nào xuất hiện
+
+tức là niềm tin là tung chưa ra head thì tương lai có head không phải là sai ._., nó chỉ là không có tăng xác suất thôi
+
+chỗ này là chỗ dị mà em nói, vì lý do nào đó mà em biết câu đó make perfect sense, nhưng não lại thấy conflict =]]]]
+
+Còn bayes thì nó đi update niềm tin về coin, tức là tung càng thiếu head thì nó càng thiên về việc coin không fair, chứ chả liên quan gì việc next sẽ dễ ra head =]]]
+
+ 
