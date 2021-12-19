@@ -14,7 +14,7 @@ I'm one of those people who cannot remember for too long. Thanks to that I have 
 
 My goal when writing a post will be easy to read, and the more example the better. I plan to write in Vietnamese when I am lazy, so there will be 2 languages. I also have tags on them, VI for Vietnamese and EN for English. 
 
-# Reseearch interest
+# Research interest
 
 Anything relate to space and representation. Theory or practical is all good. 
 
