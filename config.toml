@@ -7,7 +7,6 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
     note = "/note/:year/:month/:day/:slug/"
 [[menu.main]]
     name = "Home"
@@ -30,8 +29,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "https://github.com/phamtrongthang123"
     weight = 5
 [[menu.main]]
-    name = "Subscribe"
-    url = "/index.xml"
+    name = "Google Scholars"
+    url = "https://scholar.google.com/citations?user=SwR0T0UAAAAJ&hl=en"
+    weight = 6
 
 
 [params]
@@ -55,3 +55,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     height = 50
     alt = "Logo"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

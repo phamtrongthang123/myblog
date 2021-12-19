@@ -1,82 +1,0 @@
-<!DOCTYPE html>
-<html lang="vi-VN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Implicit notation in Kullback-Leibler divergence | Trong-Thang Pham&#39;s Blog</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    
-  </head>
-
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/categories/">Categories</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-      <li><a href="https://github.com/phamtrongthang123">GitHub</a></li>
-      
-      <li><a href="/index.xml">Subscribe</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
-
-<div class="article-meta">
-<h1><span class="title">Implicit notation in Kullback-Leibler divergence</span></h1>
-
-<h2 class="date">2021/08/18</h2>
-</div>
-
-<main>
-<p><strong>What do we know about KL div, the definition?</strong></p>
-<p><code>$$ D_{\mathrm{KL}}(P \| Q)=\sum_{x \in \mathcal{X}} P(x) \log \left(\frac{P(x)}{Q(x)}\right) $$</code></p>
-<p><strong>The behaviour?</strong></p>
-<p><img src="https://ermongroup.github.io/cs228-notes/assets/img/kldiv.png" alt="Fitting a unimodal approximating distribution q (red) to a multimodal p (blue). Using KL(p||q) leads to a q that tries to cover both modes (a). However, using KL(q||p) forces q to choose one of the two modes of p (b, c)."></p>
-<p>Fitting a unimodal approximating distribution q (red) to a multimodal $p$ (blue). Using KL(p || q) leads to a q that tries to cover both modes (a). However, using <code>$\mathrm{KL}(\mathrm{q}|| \mathrm{p})$</code> forces <code>$q$</code> to choose one of the two modes of <code>$p(b, c)$</code>.</p>
-<p><strong>Well, you see</strong></p>
-<p>I used to use this notation instead as definition:
-<code>$$ D_{\mathrm{KL}}(P - Q)=\sum_{x \in \mathcal{X}} P(x) \log P(x) - \log Q(x) $$</code>
-Because it is easier to rememeber, I mean there are two minus sign!</p>
-<p>But later date when I notice the behaviour as the above image, there is something new clicking in my head.</p>
-<p><strong>The left term is meant to be smaller than the right term.</strong></p>
-<ul>
-<li>
-<p><code>Using KL(p||q) leads to a q that tries to cover both modes</code></p>
-</li>
-<li>
-<p><code>Using KL(q||p) forces q to choose one of the two modes of p.</code> &lt;= This also mean: Using KL(p || q) leads to p <strong>tries fit into</strong> q.</p>
-</li>
-</ul>
-<p>The new connection here is, <code>$p \in q$</code>. right? , the left term p is trying to be a component of the right term q.</p>
-<p><strong>The cross entropy is also funny</strong></p>
-<p>You already know that 
-<code>$$ H(p, q)=H(p)+D_{\mathrm{KL}}(p \| q) $$</code></p>
-<p>or</p>
-<p><code>$$ D_{\mathrm{KL}}(p \| q)= H(p, q) - H(p) \\  \text{Div = CrossEntropy - AnchorEntropy} $$</code></p>
-<p>The equation makes me think: &ldquo;They really hate p, dont they?&rdquo;</p>
-<p>They want to make the p as unimportant as possible or something.</p>
-<p>It&rsquo;s just a matter of saying, but the relationship is clear that <strong>p is meant to be belong to q</strong>.</p>
-<p>Bluntly, those implicit meaning just to help myself to not mistake notation anymore. They won&rsquo;t help you choose which one to work with anyway. Maybe I will use <code>$D_{\mathrm{KL}}(p \in q)$</code> for the fun of it.</p>
-
-</main>
-
-  <footer>
-  <script src="//yihui.org/js/math-code.js"></script>
-<script async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script async src="//yihui.org/js/center-img.js"></script>
-  
-  </footer>
-  </body>
-</html>
-
