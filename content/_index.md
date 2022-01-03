@@ -11,5 +11,5 @@ Hi, I am Trong-Thang Pham. I finished my Bachelor in Computer Science at the Uni
 
 # Research interest
 
-Anything relates to space and representation. Theory or practice is all good. 
+Anything relates to space and representation. Theory or practice is all good. But to pick one or two right now, it is representation learning and unsupervised learning.
 
