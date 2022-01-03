@@ -32,8 +32,15 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Google Scholars"
     url = "https://scholar.google.com/citations?user=SwR0T0UAAAAJ&hl=en"
     weight = 6
+[[menu.main]]
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/phamtrongthanghcmus/"
+    weight = 7
 
-
+[[menu.main]]
+    name = "CV"
+    url = "https://drive.google.com/file/d/1aXYRX2aj9pHeakYM7PkOkOVQQl8XwOxr/view?usp=sharing"
+    weight = 8
 [params]
     description = "Trong-Thang Pham's blog"
 
