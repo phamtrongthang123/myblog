@@ -19,7 +19,7 @@ date: '2021-12-19'
 
 # Why I write this blog
 
-I'm one of those people who cannot remember for too long. Thanks to that I have to learn to write down everything. This website is somewhere I post random stuff that I would write as my note. 
+I'm one of those people who cannot remember for too long. Thanks to that I have to write down everything. This website is somewhere I post random stuff that I would write as my note. 
 
 My goal when writing a post will be easy to read, and the more example the better. I plan to write in Vietnamese when I am lazy, so there will be 2 languages. I also have tags on them, VI for Vietnamese and EN for English. 
 
