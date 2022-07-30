@@ -1,1 +1,0 @@
-ubuntu micro thì ổn, nhưng window thì ù rè mất tiếng, hóa ra là vì nó bật noise reduction. Nó nằm ở Open Sound setting, mục Input, click device properties, click Additional device properties, mục microphone effect (kể cả cắm jack microphone cũng có cái này). Lúc mình dò ban đầu thì nó enable mục đó, tắt đi thì voice record lại bình thường. Nói chung là micro rất hên xui.
